@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic; 
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
@@ -21,11 +19,11 @@ public class PlayerMovement : MonoBehaviour {
         float yInput = Input.GetAxis("Vertical"); 
 
         if (Mathf.Abs(xInput) > 0) {
-            body.velocity = new Vector2(xInput*speed, body.velocity.y); 
+            body.linearVelocity = new Vector2(xInput*speed, body.linearVelocity.y); 
         }
 
         if (Mathf.Abs(yInput) > 0) {
-            body.velocity = new Vector2(body.velocity.x, yInput * speed); 
+            body.linearVelocity = new Vector2(body.linearVelocity.x, yInput * speed); 
         }
 
     }
