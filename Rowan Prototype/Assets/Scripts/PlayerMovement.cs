@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour {
 
             if (onWall() && !isGrounded()) {
                 isWallSliding = true;
-                body.gravityScale = 2; // Reduce gravity while sliding
+                body.gravityScale = 5; // gravity while sliding
 
                 // If moving into the wall, prevent upward movement
                 if (body.linearVelocity.y > 0) {
