@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class KeyBackgroundManager : MonoBehaviour {
   [SerializeField] private Sprite m_keyPressBackgroundSprite;
   [SerializeField] private Image[] m_keyBackgrounds; // Array of backgrounds, 0-9, in that order
-  private Collider2D objectCollider; 
 
   private void Update() {
     // Handle number keys (0-9)
