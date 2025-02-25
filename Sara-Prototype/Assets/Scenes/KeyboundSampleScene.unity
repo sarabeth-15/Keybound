@@ -3882,8 +3882,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eec5f661276ddc49b8f963936cca24b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 689623375}
   speed: 5
-  jumpForce: 5
 --- !u!1 &698345038
 GameObject:
   m_ObjectHideFlags: 0
@@ -6175,7 +6175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb81151564e303d4f886ad947eb00e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_keyPressBackgroundSprite: {fileID: -8651939098627534198, guid: fe80d144aa7feb24c867d69a2ac8d295, type: 3}
+  m_keyPressBackgroundSprite: {fileID: -1572391234087474867, guid: e72f9c3c9cf20f64cb3485e18c68fbfc, type: 3}
   m_keyBackgrounds:
   - {fileID: 298603421}
   - {fileID: 682551069}
