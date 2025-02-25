@@ -22,7 +22,7 @@ public class KeyBackgroundManager : MonoBehaviour {
       if (Input.GetKey(keyCode))
       {
         m_keyBackgrounds[keyIndex + 10].sprite = m_keyPressBackgroundSprite;
-        AddCollider(m_keyBackgrounds[keyIndex + 10]); 
+        AddCollider(m_keyBackgrounds[keyIndex]); 
       }
     }
   }
@@ -39,5 +39,5 @@ public class KeyBackgroundManager : MonoBehaviour {
       collider.size = rectTransform.rect.size;
       collider.offset = Vector2.zero;
       collider.enabled = true;
-  }
+    }
 }
