@@ -38,7 +38,6 @@ public class KeyBackgroundManager : MonoBehaviour {
         collider.offset = Vector2.zero;
         collider.enabled = true;
 
-
     }
 
 }
