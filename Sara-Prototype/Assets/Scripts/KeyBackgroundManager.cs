@@ -38,6 +38,7 @@ public class KeyBackgroundManager : MonoBehaviour {
         collider.offset = Vector2.zero;
         collider.enabled = true;
 
+        keyImage.gameObject.layer = LayerMask.NameToLayer("Ground");
     }
 
 }
