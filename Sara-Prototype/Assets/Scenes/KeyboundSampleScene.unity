@@ -4184,7 +4184,7 @@ MonoBehaviour:
   acceleration: 0
   groundDecay: 0.212
   groundSpeed: 2.3
-  jumpSpeed: 6
+  jumpSpeed: 5.5
   grounded: 1
   horizontalInput: 0
 --- !u!1 &698345038
