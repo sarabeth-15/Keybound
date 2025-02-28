@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: d62d4a677b0b74c47a62b6a8baab52a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4207310645360702712
+    second: Keybound Alphabet_0
+  - first:
+      213: -6579197491468950398
+    second: Keybound Alphabet_1
+  - first:
+      213: -460325315437360847
+    second: Keybound Alphabet_2
+  - first:
+      213: 5238133717241355954
+    second: Keybound Alphabet_3
+  - first:
+      213: 1507349713593439824
+    second: Keybound Alphabet_4
+  - first:
+      213: 6518300320760579043
+    second: Keybound Alphabet_5
+  - first:
+      213: 1971407161682608247
+    second: Keybound Alphabet_6
+  - first:
+      213: 3074900124117135958
+    second: Keybound Alphabet_7
+  - first:
+      213: 6769266128122613502
+    second: Keybound Alphabet_8
+  - first:
+      213: 527554403873257310
+    second: Keybound Alphabet_9
+  - first:
+      213: 1344525892036085883
+    second: Keybound Alphabet_10
+  - first:
+      213: -6956376577876182695
+    second: Keybound Alphabet_11
+  - first:
+      213: 6938079155286596332
+    second: Keybound Alphabet_12
+  - first:
+      213: 2595280730371550029
+    second: Keybound Alphabet_13
+  - first:
+      213: -326888908324954908
+    second: Keybound Alphabet_14
+  - first:
+      213: -6435546882488775506
+    second: Keybound Alphabet_15
+  - first:
+      213: 6764533397930619972
+    second: Keybound Alphabet_16
+  - first:
+      213: 3977084505626917808
+    second: Keybound Alphabet_17
+  - first:
+      213: 7433032262786074878
+    second: Keybound Alphabet_18
+  - first:
+      213: -8053980797424692810
+    second: Keybound Alphabet_19
+  - first:
+      213: -1455835548246824540
+    second: Keybound Alphabet_20
+  - first:
+      213: -6917507120446540248
+    second: Keybound Alphabet_21
+  - first:
+      213: -2211994551207701658
+    second: Keybound Alphabet_22
+  - first:
+      213: -1888478649168526327
+    second: Keybound Alphabet_23
+  - first:
+      213: -6239958804276996990
+    second: Keybound Alphabet_24
+  - first:
+      213: 2039111154888401620
+    second: Keybound Alphabet_25
+  - first:
+      213: -5369448372623409465
+    second: Keybound Alphabet_26
+  - first:
+      213: -5859499818893954193
+    second: Keybound Alphabet_27
+  - first:
+      213: -4136166115978670706
+    second: Keybound Alphabet_28
+  - first:
+      213: 1722559773633321686
+    second: Keybound Alphabet_29
+  - first:
+      213: -2907657353066127100
+    second: Keybound Alphabet_30
+  - first:
+      213: -17247936165968740
+    second: Keybound Alphabet_31
+  - first:
+      213: -4047575550560229976
+    second: Keybound Alphabet_32
+  - first:
+      213: -2019678838673661817
+    second: Keybound Alphabet_33
+  - first:
+      213: 7645000405870861648
+    second: Keybound Alphabet_34
+  - first:
+      213: 4146478752699114461
+    second: Keybound Alphabet_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Keybound Alphabet_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1048
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b4e836241ac95c0800000000000000
+      internalID: -4207310645360702712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1054
+        width: 52
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2842ad55dbef1b4a0800000000000000
+      internalID: -6579197491468950398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_2
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1056
+        width: 54
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1398c3480989c99f0800000000000000
+      internalID: -460325315437360847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1055
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2beda2eecd691b840800000000000000
+      internalID: 5238133717241355954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_4
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1048
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0561607049e2be410800000000000000
+      internalID: 1507349713593439824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_5
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1049
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3cf363b97a57a50800000000000000
+      internalID: 6518300320760579043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_6
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1054
+        width: 54
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770c0cb5e58db5b10800000000000000
+      internalID: 1971407161682608247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_7
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1059
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6527ec11f5d3caa20800000000000000
+      internalID: 3074900124117135958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 804
+        width: 34
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe05dcada341fd50800000000000000
+      internalID: 6769266128122613502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 796
+        width: 64
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57fe8a6fef325700800000000000000
+      internalID: 527554403873257310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_10
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 785
+        width: 70
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78402adc27b8a210800000000000000
+      internalID: 1344525892036085883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_11
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 782
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959b7dfdb5cf57f90800000000000000
+      internalID: -6956376577876182695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_12
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 789
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea56627b32094060800000000000000
+      internalID: 6938079155286596332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_13
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 781
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b663ae21a440420800000000000000
+      internalID: 2595280730371550029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_14
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 786
+        width: 63
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec96421548a67bf0800000000000000
+      internalID: -326888908324954908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_15
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 534
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac42e5153850b6a0800000000000000
+      internalID: -6435546882488775506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_16
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 529
+        width: 72
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444bbee094370ed50800000000000000
+      internalID: 6764533397930619972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_17
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 532
+        width: 56
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb3a9f4941713730800000000000000
+      internalID: 3977084505626917808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_18
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 531
+        width: 19
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8c16b067f672760800000000000000
+      internalID: 7433032262786074878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_19
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 532
+        width: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b11fa5f2238a3090800000000000000
+      internalID: -8053980797424692810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_20
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 527
+        width: 73
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9ac5f3845dbcbe0800000000000000
+      internalID: -1455835548246824540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_21
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 525
+        width: 63
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8267c8aace31000a0800000000000000
+      internalID: -6917507120446540248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_22
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 517
+        width: 78
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6635a22ecaa6d41e0800000000000000
+      internalID: -2211994551207701658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 266
+        width: 80
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90486669ca6cac5e0800000000000000
+      internalID: -1888478649168526327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_24
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 267
+        width: 83
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2849ff937863769a0800000000000000
+      internalID: -6239958804276996990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_25
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 265
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2e8acaac06c4c10800000000000000
+      internalID: 2039111154888401620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_26
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 261
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce7bf55723eb75b0800000000000000
+      internalID: -5369448372623409465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_27
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 264
+        width: 71
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f633c5da5ffdeaea0800000000000000
+      internalID: -5859499818893954193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_28
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 266
+        width: 72
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d8515f4d26996c0800000000000000
+      internalID: -4136166115978670706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_29
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 274
+        width: 85
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da9ac3dcf2c7e710800000000000000
+      internalID: 1722559773633321686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_30
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 271
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401e0f5fa0de5a7d0800000000000000
+      internalID: -2907657353066127100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_31
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 7
+        width: 71
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9408bbe719b2cff0800000000000000
+      internalID: -17247936165968740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 8
+        width: 97
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a52d435b7f14d7c0800000000000000
+      internalID: -4047575550560229976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_33
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 6
+        width: 64
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780ab740cc8a8f3e0800000000000000
+      internalID: -2019678838673661817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_34
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 0
+        width: 62
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d56ab3d5f781a60800000000000000
+      internalID: 7645000405870861648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Alphabet_35
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2
+        width: 76
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3e553e4704b8930800000000000000
+      internalID: 4146478752699114461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Keybound Alphabet_0: -4207310645360702712
+      Keybound Alphabet_1: -6579197491468950398
+      Keybound Alphabet_10: 1344525892036085883
+      Keybound Alphabet_11: -6956376577876182695
+      Keybound Alphabet_12: 6938079155286596332
+      Keybound Alphabet_13: 2595280730371550029
+      Keybound Alphabet_14: -326888908324954908
+      Keybound Alphabet_15: -6435546882488775506
+      Keybound Alphabet_16: 6764533397930619972
+      Keybound Alphabet_17: 3977084505626917808
+      Keybound Alphabet_18: 7433032262786074878
+      Keybound Alphabet_19: -8053980797424692810
+      Keybound Alphabet_2: -460325315437360847
+      Keybound Alphabet_20: -1455835548246824540
+      Keybound Alphabet_21: -6917507120446540248
+      Keybound Alphabet_22: -2211994551207701658
+      Keybound Alphabet_23: -1888478649168526327
+      Keybound Alphabet_24: -6239958804276996990
+      Keybound Alphabet_25: 2039111154888401620
+      Keybound Alphabet_26: -5369448372623409465
+      Keybound Alphabet_27: -5859499818893954193
+      Keybound Alphabet_28: -4136166115978670706
+      Keybound Alphabet_29: 1722559773633321686
+      Keybound Alphabet_3: 5238133717241355954
+      Keybound Alphabet_30: -2907657353066127100
+      Keybound Alphabet_31: -17247936165968740
+      Keybound Alphabet_32: -4047575550560229976
+      Keybound Alphabet_33: -2019678838673661817
+      Keybound Alphabet_34: 7645000405870861648
+      Keybound Alphabet_35: 4146478752699114461
+      Keybound Alphabet_4: 1507349713593439824
+      Keybound Alphabet_5: 6518300320760579043
+      Keybound Alphabet_6: 1971407161682608247
+      Keybound Alphabet_7: 3074900124117135958
+      Keybound Alphabet_8: 6769266128122613502
+      Keybound Alphabet_9: 527554403873257310
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
