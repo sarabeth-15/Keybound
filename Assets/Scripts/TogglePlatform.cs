@@ -8,9 +8,8 @@ public class TogglePlatform : MonoBehaviour
     [SerializeField] public KeyCode toggleKey;
     [SerializeField] private Sprite brickON;
     [SerializeField] private Sprite brickOFF;
+    [SerializeField] public RoomCheck room;
     
-    //[SerializeField] public CameraController cam; //!
-
 
     private void Start()
     {
@@ -30,10 +29,13 @@ public class TogglePlatform : MonoBehaviour
     {
         if (toggleKey == KeyCode.None) return;
 
-        //if (gameObject.root != cam.currentRoom) return; //!
+        bool isKeyHeld = false;
 
-        bool isKeyHeld = Input.GetKey(toggleKey);
-        platformCollider.enabled = isKeyHeld;
+        if (room.playerInRoom) // Only run if player is in the room
+        {
+            isKeyHeld = Input.GetKey(toggleKey);
+            platformCollider.enabled = isKeyHeld;
+        }
 
         if (spriteRenderer != null)
         {
@@ -42,5 +44,6 @@ public class TogglePlatform : MonoBehaviour
 
         // Scale up when active, reset when inactive
         transform.localScale = isKeyHeld ? originalScale * 1.1f : originalScale;
+        
     }
 }

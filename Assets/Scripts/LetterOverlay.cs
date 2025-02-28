@@ -4,6 +4,7 @@ public class LetterOverlay : MonoBehaviour
 {
     private SpriteRenderer letterRenderer;
     private TogglePlatform togglePlatform;
+    private RoomCheck room;
 
     [SerializeField] private Sprite letterSprite;
 
@@ -15,6 +16,8 @@ public class LetterOverlay : MonoBehaviour
             Debug.LogError("LetterOverlay must be attached to a child of an object with TogglePlatform!");
             return;
         }
+
+        room = togglePlatform.room;
 
         // Create a new object for the letter overlay
         GameObject letterObject = new GameObject("LetterOverlay");
@@ -32,12 +35,17 @@ public class LetterOverlay : MonoBehaviour
 
     private void Update()
     {
-        if (togglePlatform == null) return;
+        bool isKeyHeld = false;
+        
+        if (togglePlatform == null || room == null || letterRenderer == null) return;
 
-        bool isKeyHeld = Input.GetKey(togglePlatform.toggleKey);
+        if (room.playerInRoom) // Only run if player is in the room
+        {
+            isKeyHeld = Input.GetKey(togglePlatform.toggleKey);
 
-        // Change letter opacity: 50% when active, 10% when inactive
-        float letterOpacity = isKeyHeld ? 0.5f : 0.1f;
-        letterRenderer.color = new Color(1, 1, 1, letterOpacity);
+            // Change letter opacity: 50% when active, 10% when inactive
+            float letterOpacity = isKeyHeld ? 0.5f : 0.1f;
+            letterRenderer.color = new Color(1, 1, 1, letterOpacity);
+        }
     }
 }
