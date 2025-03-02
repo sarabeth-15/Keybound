@@ -2,7 +2,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement; 
 
 public class MainMenu : MonoBehaviour {
-    public void GoToScene(string sceneName) {
-        SceneManager.LoadScene(sceneName);
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.T)) {
+            SceneManager.LoadScene("Level0"); 
+        }
+
+        if (Input.GetKeyDown(KeyCode.V)) {
+            QuitGame(); 
+        }
+    }
+
+    void QuitGame() {
+        Application.Quit();
+        Debug.Log("Game has quit."); 
     }
 }
