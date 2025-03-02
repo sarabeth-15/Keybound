@@ -7,9 +7,15 @@ public class MainMenu : MonoBehaviour {
             SceneManager.LoadScene("Level0"); 
         }
 
-        if (Input.GetKeyDown(KeyCode.V)) {
+        if (Input.GetKeyDown(KeyCode.S)) {
+            SceneManager.LoadScene("Settings"); 
+        }
+
+            if (Input.GetKeyDown(KeyCode.V)) {
             QuitGame(); 
         }
+
+       
     }
 
     void QuitGame() {
