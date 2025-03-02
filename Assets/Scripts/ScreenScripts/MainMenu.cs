@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour {
             SceneManager.LoadScene("Settings"); 
         }
 
-            if (Input.GetKeyDown(KeyCode.V)) {
+        if (Input.GetKeyDown(KeyCode.V)) {
             QuitGame(); 
         }
 
