@@ -12,10 +12,8 @@ public class MainMenu : MonoBehaviour {
         }
 
         if (Input.GetKeyDown(KeyCode.V)) {
-            QuitGame(); 
-        }
-
-       
+            QuitGame();
+        }    
     }
 
     void QuitGame() {
