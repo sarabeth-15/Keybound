@@ -31,6 +31,8 @@ public class TogglePlatform : MonoBehaviour
 
         bool isKeyHeld = false;
 
+        if (!room.playerInRoom) return;
+        
         if (room.playerInRoom) // Only run if player is in the room
         {
             isKeyHeld = Input.GetKey(toggleKey);
