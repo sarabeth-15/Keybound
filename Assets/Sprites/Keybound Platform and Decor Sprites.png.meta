@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: 2a4aa2e6db1c306458701a91f9dca452
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -752294041528828872
+    second: Keybound Platform and Decor Sprites_0
+  - first:
+      213: 9120716625509927788
+    second: Keybound Platform and Decor Sprites_1
+  - first:
+      213: 6114398868075453601
+    second: Keybound Platform and Decor Sprites_2
+  - first:
+      213: 7480904530487862342
+    second: Keybound Platform and Decor Sprites_3
+  - first:
+      213: 3039047983324398470
+    second: Keybound Platform and Decor Sprites_4
+  - first:
+      213: 8333053202522969414
+    second: Keybound Platform and Decor Sprites_5
+  - first:
+      213: 2414790506601076366
+    second: Keybound Platform and Decor Sprites_6
+  - first:
+      213: -8726829651599109
+    second: Keybound Platform and Decor Sprites_7
+  - first:
+      213: -321503723016466884
+    second: Keybound Platform and Decor Sprites_8
+  - first:
+      213: -5101684710495372326
+    second: Keybound Platform and Decor Sprites_9
+  - first:
+      213: -7066822255444251750
+    second: Keybound Platform and Decor Sprites_10
+  - first:
+      213: -1027308088304055928
+    second: Keybound Platform and Decor Sprites_11
+  - first:
+      213: -6649176634104387363
+    second: Keybound Platform and Decor Sprites_12
+  - first:
+      213: -3065289185669131033
+    second: Keybound Platform and Decor Sprites_13
+  - first:
+      213: 3553673349101858735
+    second: Keybound Platform and Decor Sprites_14
+  - first:
+      213: 7694772058234363629
+    second: Keybound Platform and Decor Sprites_15
+  - first:
+      213: -4310667978218955241
+    second: Keybound Platform and Decor Sprites_16
+  - first:
+      213: 5447634460531571071
+    second: Keybound Platform and Decor Sprites_17
+  - first:
+      213: -5457631985821977360
+    second: Keybound Platform and Decor Sprites_18
+  - first:
+      213: -4023076449413600937
+    second: Keybound Platform and Decor Sprites_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1538
+        width: 448
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 224, y: 191.75009}
+        - {x: 224, y: 249}
+        - {x: -223.74998, y: 249}
+        - {x: -223.74998, y: -248.87488}
+        - {x: -159, y: -249}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cf7081e805f85f0800000000000000
+      internalID: -752294041528828872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1376
+        width: 97
+        height: 613
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 48.5, y: 306.5}
+        - {x: -48.5, y: 306.5}
+        - {x: -48.5, y: -305.8749}
+        - {x: 48.5, y: -305.8749}
+      - - {x: 5.187549, y: 183.50005}
+        - {x: -6.06245, y: 185.37505}
+        - {x: -7.93745, y: 187.25005}
+        - {x: -7.93745, y: 204.12505}
+        - {x: -6.06245, y: 206.00005}
+        - {x: -7.93745, y: 207.87505}
+        - {x: 1.4375495, y: 207.87505}
+        - {x: 3.3125494, y: 206.00005}
+        - {x: 7.062549, y: 206.00005}
+        - {x: 8.93755, y: 204.12505}
+        - {x: 8.93755, y: 194.75005}
+        - {x: 5.187549, y: 189.12505}
+        - {x: 5.187549, y: 185.37505}
+        - {x: 7.062549, y: 183.50005}
+        - {x: 7.062549, y: 181.62505}
+      - - {x: -2.3124502, y: 54.125057}
+        - {x: -0.43745038, y: 63.500057}
+        - {x: -2.3124502, y: 65.37506}
+        - {x: -0.43745038, y: 76.62505}
+        - {x: -2.3124502, y: 78.50005}
+        - {x: -2.3124502, y: 82.25005}
+        - {x: -0.43745038, y: 80.37505}
+        - {x: 3.3125494, y: 80.37505}
+        - {x: 1.4375495, y: 78.50005}
+        - {x: 1.4375495, y: 72.87506}
+        - {x: 3.3125494, y: 71.00006}
+        - {x: 1.4375495, y: 59.750057}
+        - {x: 3.3125494, y: 57.875057}
+        - {x: -0.43745038, y: 54.125057}
+      - - {x: 5.187549, y: -73.37493}
+        - {x: -6.06245, y: -71.49994}
+        - {x: -7.93745, y: -69.62494}
+        - {x: -7.93745, y: -52.749935}
+        - {x: -6.06245, y: -50.874935}
+        - {x: -7.93745, y: -47.124935}
+        - {x: -4.1874504, y: -47.124935}
+        - {x: -2.3124502, y: -48.999935}
+        - {x: 7.062549, y: -50.874935}
+        - {x: 8.93755, y: -52.749935}
+        - {x: 8.93755, y: -62.124935}
+        - {x: 5.187549, y: -65.87494}
+        - {x: 5.187549, y: -69.62494}
+        - {x: 7.062549, y: -71.49994}
+        - {x: 7.062549, y: -75.24993}
+      - - {x: -2.3124502, y: -202.74992}
+        - {x: -0.43745038, y: -193.37492}
+        - {x: -2.3124502, y: -191.49992}
+        - {x: -0.43745038, y: -180.24992}
+        - {x: -2.3124502, y: -178.37492}
+        - {x: -2.3124502, y: -174.62492}
+        - {x: -0.43745038, y: -176.49992}
+        - {x: 3.3125494, y: -176.49992}
+        - {x: 1.4375495, y: -178.37492}
+        - {x: 1.4375495, y: -183.99992}
+        - {x: 3.3125494, y: -185.87492}
+        - {x: 1.4375495, y: -197.12492}
+        - {x: 3.3125494, y: -198.99992}
+        - {x: 1.4375495, y: -202.74992}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bc480827b439e70800000000000000
+      internalID: 9120716625509927788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1377
+        width: 165
+        height: 576
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 82.5, y: -241.12494}
+        - {x: 82.5, y: 148.87503}
+        - {x: 61.562515, y: 229.50003}
+        - {x: 39.062515, y: 229.50003}
+        - {x: 39.062515, y: 283.87503}
+        - {x: 3.4375188, y: 283.87503}
+        - {x: -0.3124809, y: 268.87503}
+        - {x: -0.3124809, y: 229.50003}
+        - {x: -75.31248, y: 229.50003}
+        - {x: -82.5, y: 205.12503}
+        - {x: -82.5, y: -209.24994}
+        - {x: -49.062477, y: -287.99994}
+        - {x: 24.062517, y: -287.99994}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac10b20065bad450800000000000000
+      internalID: 6114398868075453601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 1326
+        width: 705
+        height: 751
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 352.5, y: 38.81252}
+        - {x: 352.5, y: 375.5}
+        - {x: -324.43747, y: 375.5}
+        - {x: -352.5, y: 365.0625}
+        - {x: -352.5, y: 72.56252}
+        - {x: -116.31248, y: -375.5}
+        - {x: 193.0625, y: -375.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6830b6d0a0edc2a20800000000000000
+      internalID: 3039047983324398470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1368
+        width: 86
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 43, y: -20.43743}
+        - {x: 43, y: 52.687565}
+        - {x: 35.062523, y: 54}
+        - {x: 10.687522, y: 54}
+        - {x: -43, y: 37.687565}
+        - {x: -43, y: -27.93743}
+        - {x: -21.187475, y: -46.687428}
+        - {x: -4.312477, y: -54}
+        - {x: 20.062521, y: -54}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64510debcb3f4a370800000000000000
+      internalID: 8333053202522969414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1373
+        width: 157
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 78.5, y: -23.874891}
+        - {x: 78.5, y: 73.6251}
+        - {x: 38.062504, y: 108}
+        - {x: -70.68749, y: 108}
+        - {x: -78.18749, y: 99.8751}
+        - {x: -78.18749, y: 51.125103}
+        - {x: -14.437493, y: -108}
+        - {x: 9.937505, y: -108}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8651f0fb2f038120800000000000000
+      internalID: 2414790506601076366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1377
+        width: 142
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 71, y: -37.68745}
+        - {x: 71, y: 44.812542}
+        - {x: 53.062588, y: 126}
+        - {x: -70.68741, y: 126}
+        - {x: -70.68741, y: -54.56245}
+        - {x: -33.18741, y: -125.81245}
+        - {x: 34.31259, y: -125.81245}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0e992aefef0eff0800000000000000
+      internalID: -8726829651599109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 995
+        width: 422
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 211, y: 139}
+        - {x: -210.37498, y: 139}
+        - {x: -210.37498, y: -106.562454}
+        - {x: -204.74998, y: -138.43745}
+        - {x: 211, y: -138.43745}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e43ab311ac98bf0800000000000000
+      internalID: -321503723016466884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 995
+        width: 422
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 211, y: -127.187454}
+        - {x: 211, y: 139}
+        - {x: -210.74998, y: 139}
+        - {x: -210.74998, y: -117.812454}
+        - {x: -203.24998, y: -136.56245}
+        - {x: -165.74998, y: -138.43745}
+        - {x: 209.25, y: -138.43745}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbb1e229cc2339b0800000000000000
+      internalID: -5101684710495372326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 995
+        width: 422
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 211, y: 139}
+        - {x: -210.3749, y: 139}
+        - {x: -210.3749, y: -106.562454}
+        - {x: -204.7499, y: -138.43745}
+        - {x: 211, y: -138.43745}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bab6da99a9ded90800000000000000
+      internalID: -7066822255444251750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 995
+        width: 422
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 211, y: -95.312454}
+        - {x: 211, y: 139}
+        - {x: -210.74992, y: 139}
+        - {x: -210.74992, y: -130.93745}
+        - {x: -186.37492, y: -138.43745}
+        - {x: 205.50006, y: -138.43745}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88940c19cb44eb1f0800000000000000
+      internalID: -1027308088304055928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 1025
+        width: 1323
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 661.5, y: -12.812461}
+        - {x: 661.5, y: 15.312537}
+        - {x: 643.5001, y: 16.5}
+        - {x: -648.3748, y: 16.5}
+        - {x: -661.4998, y: 11.562537}
+        - {x: -661.4998, y: -12.812461}
+        - {x: -659.6248, y: -16.5}
+        - {x: 652.8751, y: -16.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd86163841169b3a0800000000000000
+      internalID: -6649176634104387363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 654
+        width: 1435
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 717.5, y: 106.50003}
+        - {x: 697.625, y: 139}
+        - {x: -661.74994, y: 139}
+        - {x: -717.5, y: 138.37503}
+        - {x: -717.5, y: -120.37496}
+        - {x: -702.99994, y: -139}
+        - {x: 717.5, y: -139}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4585ae9b7e575d0800000000000000
+      internalID: -3065289185669131033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 647
+        width: 913
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 456.5, y: 125.75002}
+        - {x: 426.5626, y: 138}
+        - {x: -411.56238, y: 138}
+        - {x: -454.68735, y: 133.25002}
+        - {x: -456.5, y: 114.50002}
+        - {x: -456.5, y: -102.99997}
+        - {x: -445.31235, y: -132.99997}
+        - {x: -342.18738, y: -138}
+        - {x: 456.5, y: -138}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf2df4351f215130800000000000000
+      internalID: 3553673349101858735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 658
+        width: 208
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 104, y: 132.06253}
+        - {x: 93.62502, y: 133}
+        - {x: -103.24996, y: 133}
+        - {x: -103.24996, y: -132.31247}
+        - {x: 104, y: -132.31247}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee19a61b6259ca60800000000000000
+      internalID: 7694772058234363629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 451
+        width: 1431
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 715.5, y: 74.5}
+        - {x: -701.875, y: 74.5}
+        - {x: -715, y: 63.81251}
+        - {x: -715, y: -74.5}
+        - {x: 715.5, y: -74.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e9b9d005e6d24c0800000000000000
+      internalID: -4310667978218955241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 453
+        width: 911
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 455.5, y: -44.812485}
+        - {x: 455.5, y: 56.437508}
+        - {x: 421.18753, y: 69}
+        - {x: -446.9374, y: 69}
+        - {x: -455.5, y: 65.81251}
+        - {x: -455.5, y: -63.562485}
+        - {x: -448.8124, y: -69}
+        - {x: 443.68753, y: -69}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f793926dda2e99b40800000000000000
+      internalID: 5447634460531571071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 2635
+        y: 459
+        width: 398
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 199, y: -66.93746}
+        - {x: 199, y: 66.18753}
+        - {x: 196.56256, y: 69}
+        - {x: -161.56241, y: 69}
+        - {x: -199, y: 66.18753}
+        - {x: -199, y: -68.81246}
+        - {x: 179.68756, y: -68.81246}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4754aef989244b0800000000000000
+      internalID: -5457631985821977360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Platform and Decor Sprites_19
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 99
+        width: 3521
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 1760.5, y: 128.0625}
+        - {x: 1747.3125, y: 138}
+        - {x: -1760.5, y: 138}
+        - {x: -1760.5, y: -119.437485}
+        - {x: -1743.9374, y: -138}
+        - {x: 1760.5, y: -138}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7596670d8492b28c0800000000000000
+      internalID: -4023076449413600937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3d612087f06007548afe2827c9e6fbeb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Keybound Platform and Decor Sprites_0: -752294041528828872
+      Keybound Platform and Decor Sprites_1: 9120716625509927788
+      Keybound Platform and Decor Sprites_10: -7066822255444251750
+      Keybound Platform and Decor Sprites_11: -1027308088304055928
+      Keybound Platform and Decor Sprites_12: -6649176634104387363
+      Keybound Platform and Decor Sprites_13: -3065289185669131033
+      Keybound Platform and Decor Sprites_14: 3553673349101858735
+      Keybound Platform and Decor Sprites_15: 7694772058234363629
+      Keybound Platform and Decor Sprites_16: -4310667978218955241
+      Keybound Platform and Decor Sprites_17: 5447634460531571071
+      Keybound Platform and Decor Sprites_18: -5457631985821977360
+      Keybound Platform and Decor Sprites_19: -4023076449413600937
+      Keybound Platform and Decor Sprites_2: 6114398868075453601
+      Keybound Platform and Decor Sprites_3: 7480904530487862342
+      Keybound Platform and Decor Sprites_4: 3039047983324398470
+      Keybound Platform and Decor Sprites_5: 8333053202522969414
+      Keybound Platform and Decor Sprites_6: 2414790506601076366
+      Keybound Platform and Decor Sprites_7: -8726829651599109
+      Keybound Platform and Decor Sprites_8: -321503723016466884
+      Keybound Platform and Decor Sprites_9: -5101684710495372326
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

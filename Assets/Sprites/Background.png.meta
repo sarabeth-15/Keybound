@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: daa8da11ec932684eba1e40ce0cc1bed
+guid: 61e8b6e28d46c9343b18aa2f15e3eab7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1821116258749944096
-    second: KeyBound bg_0
+      213: 4174694942508234672
+    second: Keybound Sprites bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KeyBound bg_0
+      name: Keybound Sprites bg_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1000
-        height: 1000
+        width: 3840
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0219a71b697e54910800000000000000
-      internalID: 1821116258749944096
+      spriteID: 0b7b2d58eee7fe930800000000000000
+      internalID: 4174694942508234672
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      KeyBound bg_0: 1821116258749944096
+      Keybound Sprites bg_0: 4174694942508234672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
