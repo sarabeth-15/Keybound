@@ -5,8 +5,9 @@ public class LetterOverlay : MonoBehaviour
     private SpriteRenderer letterRenderer;
     private TogglePlatform togglePlatform;
     private RoomCheck room;
-
     [SerializeField] private Sprite letterSprite;
+    [SerializeField] private Color32 colorOFF; 
+    [SerializeField] private Color32 colorON; 
 
     private void Start()
     {
@@ -29,8 +30,11 @@ public class LetterOverlay : MonoBehaviour
         letterRenderer.sprite = letterSprite;
         letterRenderer.sortingOrder = GetComponentInParent<SpriteRenderer>().sortingOrder + 1; // Ensure it's on top
 
-        // Set initial opacity to 10% (platform starts OFF)
-        letterRenderer.color = new Color(1, 1, 1, 0.1f);
+        colorOFF = new Color32 (32, 25, 29, 255);
+        colorON = new Color32 (48, 37, 44, 255); 
+
+        // Set initial color to Yellow
+        letterRenderer.color = colorOFF;
     }
 
     private void Update()
@@ -42,10 +46,11 @@ public class LetterOverlay : MonoBehaviour
         if (room.playerInRoom) // Only run if player is in the room
         {
             isKeyHeld = Input.GetKey(togglePlatform.toggleKey);
-
-            // Change letter opacity: 50% when active, 10% when inactive
-            float letterOpacity = isKeyHeld ? 0.5f : 0.1f;
-            letterRenderer.color = new Color(1, 1, 1, letterOpacity);
+            Color32 currentColor = isKeyHeld ? colorON : colorOFF;
+            letterRenderer.color = currentColor;
+        }
+        else {
+            letterRenderer.color = colorOFF;
         }
     }
 }

@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: dde90fd4705c02247bdfdd7f3a4552d5
+guid: 99256f65d7831f94fab0613b5218ccc5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1071083020363879801
-    second: Run2_0
+      213: -8863908180209565632
+    second: Jumps 0004_0
   - first:
-      213: 3398041401215206678
-    second: Run2_1
+      213: -7616087445702032822
+    second: Jumps 0004_1
   - first:
-      213: 2456362860138005872
-    second: Run2_2
+      213: -6906670267456719196
+    second: Jumps 0004_2
   - first:
-      213: 8911064690243821749
-    second: Run2_3
+      213: -6436008815462808102
+    second: Jumps 0004_3
   - first:
-      213: 3375198261198509059
-    second: Run2_4
+      213: 1993478619713977413
+    second: Jumps 0004_4
+  - first:
+      213: 9188521012160203746
+    second: Jumps 0004_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,11 +128,99 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run2_0
+      name: Jumps 0004_0
       rect:
         serializedVersion: 2
-        x: 262
-        y: 363
+        x: 105
+        y: 650
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0400eec19721df480800000000000000
+      internalID: -8863908180209565632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumps 0004_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 57
+        width: 519
+        height: 598
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a424e94e1d83e4690800000000000000
+      internalID: -7616087445702032822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumps 0004_2
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 638
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a67d7f1cf39620a0800000000000000
+      internalID: -6906670267456719196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumps 0004_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 563
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad58e0fe414bea6a0800000000000000
+      internalID: -6436008815462808102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumps 0004_4
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 449
         width: 47
         height: 44
       alignment: 0
@@ -140,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78a2246faafb221f0800000000000000
-      internalID: -1071083020363879801
+      spriteID: 54c33632e324aab10800000000000000
+      internalID: 1993478619713977413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run2_1
+      name: Jumps 0004_5
       rect:
         serializedVersion: 2
-        x: 331
-        y: 0
-        width: 403
-        height: 587
+        x: 57
+        y: 334
+        width: 45
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,74 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 615c08b96a4482f20800000000000000
-      internalID: 3398041401215206678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run2_2
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 291
-        width: 47
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0750df5c101c61220800000000000000
-      internalID: 2456362860138005872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run2_3
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 216
-        width: 44
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b062887f167aab70800000000000000
-      internalID: 8911064690243821749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run2_4
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 143
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 304d04d9fec17de20800000000000000
-      internalID: 3375198261198509059
+      spriteID: 2eb850d7d2f248f70800000000000000
+      internalID: 9188521012160203746
       vertices: []
       indices: 
       edges: []
@@ -248,11 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Run2_0: -1071083020363879801
-      Run2_1: 3398041401215206678
-      Run2_2: 2456362860138005872
-      Run2_3: 8911064690243821749
-      Run2_4: 3375198261198509059
+      Jumps 0004_0: -8863908180209565632
+      Jumps 0004_1: -7616087445702032822
+      Jumps 0004_2: -6906670267456719196
+      Jumps 0004_3: -6436008815462808102
+      Jumps 0004_4: 1993478619713977413
+      Jumps 0004_5: 9188521012160203746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

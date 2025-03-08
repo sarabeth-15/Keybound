@@ -3,23 +3,23 @@ guid: de579011f38d9fd43bd740872f52de38
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6288142985995847647
-    second: KeyBound Run1_0
+      213: -7930355650201923474
+    second: Run1_0
   - first:
-      213: -3757530126255974670
-    second: KeyBound Run1_1
+      213: 5992523249219935766
+    second: Run1_1
   - first:
-      213: -1795175660190299027
-    second: KeyBound Run1_2
+      213: -2267101933115109990
+    second: Run1_2
   - first:
-      213: -7919491561044165119
-    second: KeyBound Run1_3
+      213: -4269723693096132814
+    second: Run1_3
   - first:
-      213: -4057856437129560292
-    second: KeyBound Run1_4
+      213: 8477670084377810836
+    second: Run1_4
   - first:
-      213: 9100029432259827095
-    second: KeyBound Run1_5
+      213: -9099976493406203223
+    second: Run1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KeyBound Run1_0
+      name: Run1_0
       rect:
         serializedVersion: 2
-        x: 227
-        y: 733
-        width: 31
-        height: 57
+        x: 280
+        y: 552
+        width: 46
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd78521dab8f34750800000000000000
-      internalID: 6288142985995847647
+      spriteID: e60d33f8d87b1f190800000000000000
+      internalID: -7930355650201923474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KeyBound Run1_1
+      name: Run1_1
       rect:
         serializedVersion: 2
-        x: 245
-        y: 129
-        width: 491
-        height: 660
+        x: 293
+        y: 1
+        width: 471
+        height: 610
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f61fa722429adbc0800000000000000
-      internalID: -3757530126255974670
+      spriteID: 61e160a3528b92350800000000000000
+      internalID: 5992523249219935766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KeyBound Run1_2
+      name: Run1_2
       rect:
         serializedVersion: 2
-        x: 421
-        y: 730
-        width: 111
-        height: 105
+        x: 461
+        y: 556
+        width: 106
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,63 +187,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6c0ee09f314617e0800000000000000
-      internalID: -1795175660190299027
+      spriteID: a9d821fadc2a980e0800000000000000
+      internalID: -2267101933115109990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KeyBound Run1_3
+      name: Run1_3
       rect:
         serializedVersion: 2
-        x: 211
-        y: 674
-        width: 32
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10e324e6260581290800000000000000
-      internalID: -7919491561044165119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KeyBound Run1_4
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 601
-        width: 33
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c1f3c53e1199fa7c0800000000000000
-      internalID: -4057856437129560292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KeyBound Run1_5
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 534
-        width: 40
+        x: 253
+        y: 500
+        width: 46
         height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -253,8 +209,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 795527bfd8cc94e70800000000000000
-      internalID: 9100029432259827095
+      spriteID: 23f9fef4ce4eeb4c0800000000000000
+      internalID: -4269723693096132814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run1_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 444
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4979b4e660cb6a570800000000000000
+      internalID: 8477670084377810836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run1_5
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 379
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a25e1ec79366b180800000000000000
+      internalID: -9099976493406203223
       vertices: []
       indices: 
       edges: []
@@ -273,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      KeyBound Run1_0: 6288142985995847647
-      KeyBound Run1_1: -3757530126255974670
-      KeyBound Run1_2: -1795175660190299027
-      KeyBound Run1_3: -7919491561044165119
-      KeyBound Run1_4: -4057856437129560292
-      KeyBound Run1_5: 9100029432259827095
+      Run1_0: -7930355650201923474
+      Run1_1: 5992523249219935766
+      Run1_2: -2267101933115109990
+      Run1_3: -4269723693096132814
+      Run1_4: 8477670084377810836
+      Run1_5: -9099976493406203223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
