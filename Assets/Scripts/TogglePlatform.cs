@@ -29,15 +29,10 @@ public class TogglePlatform : MonoBehaviour
     {
         if (toggleKey == KeyCode.None) return;
 
-        bool isKeyHeld = false;
-
         if (!room.playerInRoom) return;
-        
-        if (room.playerInRoom) // Only run if player is in the room
-        {
-            isKeyHeld = Input.GetKey(toggleKey);
-            platformCollider.enabled = isKeyHeld;
-        }
+
+        bool isKeyHeld = Input.GetKey(toggleKey);
+        platformCollider.enabled = isKeyHeld;
 
         if (spriteRenderer != null)
         {
