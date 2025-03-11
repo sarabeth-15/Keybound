@@ -322,7 +322,9 @@ MonoBehaviour:
   toggleKey: 57
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &22553620
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -493,7 +495,9 @@ MonoBehaviour:
   toggleKey: 113
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &41260127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -790,7 +794,9 @@ MonoBehaviour:
   toggleKey: 52
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &74942912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -995,7 +1001,9 @@ MonoBehaviour:
   toggleKey: 100
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &84695909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1207,7 +1215,9 @@ MonoBehaviour:
   toggleKey: 111
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &113728687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1545,7 +1555,9 @@ MonoBehaviour:
   toggleKey: 50
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &157435548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1716,7 +1728,9 @@ MonoBehaviour:
   toggleKey: 49
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &159830076
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1887,7 +1901,9 @@ MonoBehaviour:
   toggleKey: 52
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &172923408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2091,7 +2107,9 @@ MonoBehaviour:
   toggleKey: 99
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &196205707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2262,7 +2280,9 @@ MonoBehaviour:
   toggleKey: 117
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &203849787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2433,7 +2453,9 @@ MonoBehaviour:
   toggleKey: 48
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &215922375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2604,7 +2626,9 @@ MonoBehaviour:
   toggleKey: 101
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &225717163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2773,9 +2797,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleKey: 97
-  brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
-  brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickBROKEN: {fileID: 1048442483205479263, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 488550492}
+  broken: 1
 --- !u!61 &241876504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2866,7 +2892,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  m_Sprite: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3028,7 +3054,9 @@ MonoBehaviour:
   toggleKey: 120
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!114 &280363117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3098,7 +3126,9 @@ MonoBehaviour:
   toggleKey: 50
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &281570625
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3410,9 +3440,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleKey: 57
-  brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
-  brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickBROKEN: {fileID: 1048442483205479263, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 488550492}
+  broken: 1
 --- !u!61 &298990999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3503,7 +3535,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  m_Sprite: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3717,7 +3749,9 @@ MonoBehaviour:
   toggleKey: 111
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &309037129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3928,7 +3962,9 @@ MonoBehaviour:
   toggleKey: 102
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &319379745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4080,7 +4116,9 @@ MonoBehaviour:
   toggleKey: 52
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &319391065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4320,7 +4358,9 @@ MonoBehaviour:
   toggleKey: 107
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &329244589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4472,7 +4512,9 @@ MonoBehaviour:
   toggleKey: 121
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &377147790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4662,7 +4704,9 @@ MonoBehaviour:
   toggleKey: 50
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &379774155
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5054,7 +5098,9 @@ MonoBehaviour:
   toggleKey: 119
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &448286674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5247,7 +5293,9 @@ MonoBehaviour:
   toggleKey: 113
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &458292101
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5477,7 +5525,9 @@ MonoBehaviour:
   toggleKey: 107
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &470721978
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5648,7 +5698,9 @@ MonoBehaviour:
   toggleKey: 48
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &471811029
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6263,7 +6315,9 @@ MonoBehaviour:
   toggleKey: 109
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &564559156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6434,7 +6488,9 @@ MonoBehaviour:
   toggleKey: 113
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &569287903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6605,7 +6661,9 @@ MonoBehaviour:
   toggleKey: 120
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &594914693
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6776,7 +6834,9 @@ MonoBehaviour:
   toggleKey: 49
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &598835497
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6928,7 +6988,9 @@ MonoBehaviour:
   toggleKey: 54
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &608263540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7118,7 +7180,9 @@ MonoBehaviour:
   toggleKey: 101
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &620934691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7442,7 +7506,9 @@ MonoBehaviour:
   toggleKey: 100
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &656755706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7594,7 +7660,9 @@ MonoBehaviour:
   toggleKey: 56
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &663633023
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7918,7 +7986,9 @@ MonoBehaviour:
   toggleKey: 102
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &679096350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8070,7 +8140,9 @@ MonoBehaviour:
   toggleKey: 107
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &690013900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8260,7 +8332,9 @@ MonoBehaviour:
   toggleKey: 118
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &692848196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8412,7 +8486,9 @@ MonoBehaviour:
   toggleKey: 114
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &701370532
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8674,7 +8750,9 @@ MonoBehaviour:
   toggleKey: 119
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &721806104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8826,7 +8904,9 @@ MonoBehaviour:
   toggleKey: 101
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &728243263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8975,13 +9055,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759472131}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.008726558, w: 0.999962}
-  m_LocalPosition: {x: -5.1427994, y: -1.5650008, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.017459752, w: 0.9998476}
+  m_LocalPosition: {x: -5.142799, y: -1.5650008, z: 0}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.7679233}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1120054098}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.001}
 --- !u!114 &759472133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8995,9 +9075,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleKey: 104
-  brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
-  brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickBROKEN: {fileID: 1048442483205479263, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 1489171370}
+  broken: 1
 --- !u!61 &759472134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9088,7 +9170,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  m_Sprite: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9187,7 +9269,9 @@ MonoBehaviour:
   toggleKey: 110
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &766480620
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9507,7 +9591,9 @@ MonoBehaviour:
   toggleKey: 122
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &811175728
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9659,7 +9745,9 @@ MonoBehaviour:
   toggleKey: 106
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &827638083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9849,7 +9937,9 @@ MonoBehaviour:
   toggleKey: 106
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &830015509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10020,7 +10110,9 @@ MonoBehaviour:
   toggleKey: 104
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &839415138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10191,7 +10283,9 @@ MonoBehaviour:
   toggleKey: 121
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &847360141
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10343,7 +10437,9 @@ MonoBehaviour:
   toggleKey: 116
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &847793863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10615,7 +10711,9 @@ MonoBehaviour:
   toggleKey: 110
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!114 &848250244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10704,7 +10802,9 @@ MonoBehaviour:
   toggleKey: 110
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &860186404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10875,7 +10975,9 @@ MonoBehaviour:
   toggleKey: 109
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &863625236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11228,7 +11330,9 @@ MonoBehaviour:
   toggleKey: 97
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &901007345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11654,7 +11758,9 @@ MonoBehaviour:
   toggleKey: 99
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!114 &967835337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11743,7 +11849,9 @@ MonoBehaviour:
   toggleKey: 55
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &979551763
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11914,7 +12022,9 @@ MonoBehaviour:
   toggleKey: 98
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &984818083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12085,7 +12195,9 @@ MonoBehaviour:
   toggleKey: 99
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &991015336
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12256,7 +12368,9 @@ MonoBehaviour:
   toggleKey: 48
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1010358317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12514,7 +12628,9 @@ MonoBehaviour:
   toggleKey: 104
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1018412365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12685,7 +12801,9 @@ MonoBehaviour:
   toggleKey: 110
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1019833812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12856,7 +12974,9 @@ MonoBehaviour:
   toggleKey: 56
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1024856826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13027,7 +13147,9 @@ MonoBehaviour:
   toggleKey: 106
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1030112977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13213,7 +13335,9 @@ MonoBehaviour:
   toggleKey: 51
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1053558086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13403,7 +13527,9 @@ MonoBehaviour:
   toggleKey: 99
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1070734072
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13667,7 +13793,9 @@ MonoBehaviour:
   toggleKey: 109
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1103151934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13819,7 +13947,9 @@ MonoBehaviour:
   toggleKey: 100
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1115364587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14049,7 +14179,9 @@ MonoBehaviour:
   toggleKey: 118
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1129782258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14201,7 +14333,9 @@ MonoBehaviour:
   toggleKey: 49
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1145832286
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14391,7 +14525,9 @@ MonoBehaviour:
   toggleKey: 108
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1150309593
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14562,7 +14698,9 @@ MonoBehaviour:
   toggleKey: 56
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1162257430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14731,9 +14869,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleKey: 54
-  brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
-  brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickBROKEN: {fileID: 1048442483205479263, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 1402731633}
+  broken: 1
 --- !u!61 &1163435642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14824,7 +14964,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  m_Sprite: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14883,9 +15023,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleKey: 117
-  brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
-  brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickBROKEN: {fileID: 1048442483205479263, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 1489171370}
+  broken: 1
 --- !u!61 &1166603676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14976,7 +15118,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  m_Sprite: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15056,7 +15198,9 @@ MonoBehaviour:
   toggleKey: 53
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1169308739
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15246,7 +15390,9 @@ MonoBehaviour:
   toggleKey: 103
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1173740958
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15499,7 +15645,9 @@ MonoBehaviour:
   toggleKey: 122
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!114 &1179990598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15588,7 +15736,9 @@ MonoBehaviour:
   toggleKey: 114
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1206585453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15809,7 +15959,9 @@ MonoBehaviour:
   toggleKey: 120
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1216501559
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16142,7 +16294,9 @@ MonoBehaviour:
   toggleKey: 105
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1239061305
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16357,7 +16511,7 @@ GameObject:
   - component: {fileID: 1253566493}
   - component: {fileID: 1253566496}
   - component: {fileID: 1253566495}
-  - component: {fileID: 1253566494}
+  - component: {fileID: 1253566499}
   - component: {fileID: 1253566497}
   m_Layer: 6
   m_Name: S
@@ -16381,22 +16535,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1120054098}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1}
---- !u!114 &1253566494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253566492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48db604506022384ba2bad2d2e7b1651, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toggleKey: 115
-  brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
-  brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
-  room: {fileID: 1489171370}
 --- !u!61 &1253566495
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16517,6 +16655,24 @@ MonoBehaviour:
   colorON:
     serializedVersion: 2
     rgba: 0
+--- !u!114 &1253566499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253566492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48db604506022384ba2bad2d2e7b1651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleKey: 115
+  brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
+  room: {fileID: 1489171370}
+  broken: 0
 --- !u!1 &1267222525
 GameObject:
   m_ObjectHideFlags: 0
@@ -16711,7 +16867,9 @@ MonoBehaviour:
   toggleKey: 49
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1268025716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17035,7 +17193,9 @@ MonoBehaviour:
   toggleKey: 118
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1286545215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17246,7 +17406,9 @@ MonoBehaviour:
   toggleKey: 51
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1293112423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17455,7 +17617,9 @@ MonoBehaviour:
   toggleKey: 55
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1299275111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17626,7 +17790,9 @@ MonoBehaviour:
   toggleKey: 57
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1299980113
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17968,7 +18134,9 @@ MonoBehaviour:
   toggleKey: 100
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1320616613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18139,7 +18307,9 @@ MonoBehaviour:
   toggleKey: 105
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1321134999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18310,7 +18480,9 @@ MonoBehaviour:
   toggleKey: 97
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1333126413
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18479,9 +18651,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleKey: 101
-  brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
-  brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
+  brickBROKEN: {fileID: 1048442483205479263, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 1402731633}
+  broken: 1
 --- !u!61 &1341597195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18572,7 +18746,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  m_Sprite: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18652,7 +18826,9 @@ MonoBehaviour:
   toggleKey: 52
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1362604864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18957,7 +19133,9 @@ MonoBehaviour:
   toggleKey: 56
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1379437843
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19262,7 +19440,9 @@ MonoBehaviour:
   toggleKey: 111
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1385650557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19635,7 +19815,9 @@ MonoBehaviour:
   toggleKey: 102
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1437768162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19952,7 +20134,9 @@ MonoBehaviour:
   toggleKey: 51
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1487448127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20123,7 +20307,9 @@ MonoBehaviour:
   toggleKey: 116
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1488299195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20633,7 +20819,9 @@ MonoBehaviour:
   toggleKey: 50
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1493313146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20804,7 +20992,9 @@ MonoBehaviour:
   toggleKey: 120
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1514681805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21123,7 +21313,9 @@ MonoBehaviour:
   toggleKey: 57
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1520791688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21294,7 +21486,9 @@ MonoBehaviour:
   toggleKey: 116
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1521838901
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21465,7 +21659,9 @@ MonoBehaviour:
   toggleKey: 105
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1524316983
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21803,7 +21999,9 @@ MonoBehaviour:
   toggleKey: 98
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1551141617
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21974,7 +22172,9 @@ MonoBehaviour:
   toggleKey: 54
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1552223069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22145,7 +22345,9 @@ MonoBehaviour:
   toggleKey: 53
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1555794947
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22398,7 +22600,9 @@ MonoBehaviour:
   toggleKey: 98
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!114 &1567091621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22487,7 +22691,9 @@ MonoBehaviour:
   toggleKey: 106
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1567625851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22658,7 +22864,9 @@ MonoBehaviour:
   toggleKey: 115
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1590057126
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23097,7 +23305,9 @@ MonoBehaviour:
   toggleKey: 114
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1634610757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23268,7 +23478,9 @@ MonoBehaviour:
   toggleKey: 108
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1635578486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23439,7 +23651,9 @@ MonoBehaviour:
   toggleKey: 117
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1638523852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23610,7 +23824,9 @@ MonoBehaviour:
   toggleKey: 111
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1653804649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23781,7 +23997,9 @@ MonoBehaviour:
   toggleKey: 104
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1655924033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23952,7 +24170,9 @@ MonoBehaviour:
   toggleKey: 105
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1662409264
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24173,7 +24393,9 @@ MonoBehaviour:
   toggleKey: 121
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1680576161
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24344,7 +24566,9 @@ MonoBehaviour:
   toggleKey: 108
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1682466104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24556,7 +24780,9 @@ MonoBehaviour:
   toggleKey: 107
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1709547534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24761,7 +24987,9 @@ MonoBehaviour:
   toggleKey: 98
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1745151302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24913,7 +25141,9 @@ MonoBehaviour:
   toggleKey: 97
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1760053848
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25103,7 +25333,9 @@ MonoBehaviour:
   toggleKey: 113
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1797608271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25274,7 +25506,9 @@ MonoBehaviour:
   toggleKey: 55
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1800862383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25426,7 +25660,9 @@ MonoBehaviour:
   toggleKey: 119
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1809737302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25616,7 +25852,9 @@ MonoBehaviour:
   toggleKey: 48
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1810843627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25787,7 +26025,9 @@ MonoBehaviour:
   toggleKey: 122
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1821667932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25939,7 +26179,9 @@ MonoBehaviour:
   toggleKey: 55
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1840777745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26278,7 +26520,9 @@ MonoBehaviour:
   toggleKey: 115
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1867495375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26790,7 +27034,9 @@ MonoBehaviour:
   toggleKey: 115
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1516129758}
+  broken: 0
 --- !u!61 &1952410655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26961,7 +27207,9 @@ MonoBehaviour:
   toggleKey: 53
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &1952568602
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27214,7 +27462,9 @@ MonoBehaviour:
   toggleKey: 109
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!114 &1955648569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27303,7 +27553,9 @@ MonoBehaviour:
   toggleKey: 108
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &1991285054
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27561,7 +27813,9 @@ MonoBehaviour:
   toggleKey: 117
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &1994562858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27731,8 +27985,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toggleKey: 119
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
-  brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 1048442483205479263, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &2005927430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27903,7 +28159,9 @@ MonoBehaviour:
   toggleKey: 122
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1402731633}
+  broken: 0
 --- !u!61 &2035570890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28055,7 +28313,9 @@ MonoBehaviour:
   toggleKey: 103
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!61 &2047545052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28245,7 +28505,9 @@ MonoBehaviour:
   toggleKey: 103
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &2051240186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28503,7 +28765,9 @@ MonoBehaviour:
   toggleKey: 51
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 488550492}
+  broken: 0
 --- !u!61 &2101953967
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28756,7 +29020,9 @@ MonoBehaviour:
   toggleKey: 118
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
+  brickBROKEN: {fileID: 0}
   room: {fileID: 1489171370}
+  broken: 0
 --- !u!114 &2113012027
 MonoBehaviour:
   m_ObjectHideFlags: 0

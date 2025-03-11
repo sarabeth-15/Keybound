@@ -5,10 +5,14 @@ public class TogglePlatform : MonoBehaviour
     private Collider2D platformCollider;
     private SpriteRenderer spriteRenderer;
     private Vector3 originalScale;
+    private bool used = false;
     [SerializeField] public KeyCode toggleKey;
     [SerializeField] private Sprite brickON;
     [SerializeField] private Sprite brickOFF;
+    [SerializeField] private Sprite brickBROKEN;
     [SerializeField] public RoomCheck room;
+    [SerializeField] public bool broken;
+    
     
 
     private void Start()
@@ -27,7 +31,7 @@ public class TogglePlatform : MonoBehaviour
 
     private void Update()
     {
-        if (toggleKey == KeyCode.None) return;
+        if (toggleKey == KeyCode.None || used) return;
 
         if (!room.playerInRoom) 
         {
@@ -36,6 +40,16 @@ public class TogglePlatform : MonoBehaviour
         }
 
         bool isKeyHeld = Input.GetKey(toggleKey);
+
+        if (!isKeyHeld && platformCollider.enabled && broken)
+        {
+            used = true;
+            platformCollider.enabled = false;
+            transform.localScale = originalScale;
+            spriteRenderer.sprite = brickBROKEN;
+            return;
+        } 
+        
         platformCollider.enabled = isKeyHeld;
 
         if (spriteRenderer != null)
