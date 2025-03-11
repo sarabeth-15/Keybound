@@ -29,7 +29,11 @@ public class TogglePlatform : MonoBehaviour
     {
         if (toggleKey == KeyCode.None) return;
 
-        if (!room.playerInRoom) return;
+        if (!room.playerInRoom) 
+        {
+            spriteRenderer.sprite = brickOFF;
+            return;
+        }
 
         bool isKeyHeld = Input.GetKey(toggleKey);
         platformCollider.enabled = isKeyHeld;
