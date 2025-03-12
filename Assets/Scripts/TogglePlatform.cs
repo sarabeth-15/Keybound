@@ -35,6 +35,8 @@ public class TogglePlatform : MonoBehaviour
 
         if (!room.playerInRoom) 
         {
+            platformCollider.enabled = false;
+            transform.localScale = originalScale;
             spriteRenderer.sprite = brickOFF;
             return;
         }
