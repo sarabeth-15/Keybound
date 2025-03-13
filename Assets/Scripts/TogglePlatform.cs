@@ -31,7 +31,7 @@ public class TogglePlatform : MonoBehaviour
 
     private void Update()
     {
-        if (toggleKey == KeyCode.None || used) return;
+        if (toggleKey == KeyCode.None || used || !spriteRenderer.isVisible) return;
 
         if (!room.playerInRoom) 
         {

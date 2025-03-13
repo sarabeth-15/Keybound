@@ -45,8 +45,13 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
-    private bool isGrounded() {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+    public bool isGrounded() {
+        // Reduce the box size to only check the bottom of the player
+        float extraHeight = 0.1f;
+        Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * 0.8f, 0.1f);
+        Vector2 boxCenter = new Vector2(boxCollider.bounds.center.x, boxCollider.bounds.min.y);
+
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCenter, boxSize, 0, Vector2.down, extraHeight, groundLayer);
         return raycastHit.collider != null;
     }
 }

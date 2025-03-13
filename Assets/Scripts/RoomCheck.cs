@@ -28,7 +28,7 @@ public class RoomCheck : MonoBehaviour
     {
         if (isPlayerInside && !playerInRoom)
         {
-            if (Time.time - timeEntered >= 2f) // Check if 2 seconds have passed
+            if (Time.time - timeEntered >= 1f) // Check if 2 seconds have passed
             {
                 playerInRoom = true;
             }
