@@ -32,18 +32,23 @@ public class PauseMenu : MonoBehaviour
 
         if (IsPaused) {
 
-            if (Input.GetKeyDown(KeyCode.R)) {
+            if (Input.GetKeyDown(KeyCode.T)) {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
                 IsPaused = false; 
                 Time.timeScale = 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.A)) {
+            if (Input.GetKeyDown(KeyCode.S)) {
+                SceneManager.LoadScene("Options");
+                Time.timeScale = 1; 
+            }
+
+            if (Input.GetKeyDown(KeyCode.N)) {
                 SceneManager.LoadScene("MainMenu");
                 Time.timeScale = 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.M)) {
+            if (Input.GetKeyDown(KeyCode.R)) {
                 pauseMenu.SetActive(false);
                 IsPaused = false;
                 Time.timeScale = 1;
@@ -56,7 +61,7 @@ public class PauseMenu : MonoBehaviour
 
     public static bool IsKeyBlocked(KeyCode key) {
         if (IsPaused) return true;
-        if (key == KeyCode.M && resumeM > 0f) return true;
+        if (key == KeyCode.R && resumeM > 0f) return true;
         return false; 
     }
     
