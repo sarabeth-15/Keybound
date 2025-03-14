@@ -39,9 +39,11 @@ public class LetterOverlay : MonoBehaviour
 
     private void Update()
     {
-        bool isKeyHeld = false;
         
         if (togglePlatform == null || room == null || letterRenderer == null) return;
+        if (PauseMenu.IsKeyBlocked(togglePlatform.toggleKey)) return;
+
+        bool isKeyHeld = false;
 
         if (room.playerInRoom) // Only run if player is in the room
         {
