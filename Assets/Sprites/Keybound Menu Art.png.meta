@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: dde90fd4705c02247bdfdd7f3a4552d5
+guid: 1a7552ef496067943a02d6a20543b29f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1071083020363879801
-    second: Run2_0
+      213: 2974882087376090570
+    second: Keybound Menu Art_0
   - first:
-      213: 3398041401215206678
-    second: Run2_1
+      213: -358993238580073430
+    second: Keybound Menu Art_1
   - first:
-      213: 2456362860138005872
-    second: Run2_2
-  - first:
-      213: 8911064690243821749
-    second: Run2_3
-  - first:
-      213: 3375198261198509059
-    second: Run2_4
+      213: -1005813145460250445
+    second: Keybound Menu Art_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -87,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,35 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run2_0
+      name: Keybound Menu Art_0
       rect:
         serializedVersion: 2
-        x: 262
-        y: 363
-        width: 47
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78a2246faafb221f0800000000000000
-      internalID: -1071083020363879801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run2_1
-      rect:
-        serializedVersion: 2
-        x: 331
+        x: 31
         y: 0
-        width: 403
-        height: 587
+        width: 3059
+        height: 2072
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 615c08b96a4482f20800000000000000
-      internalID: 3398041401215206678
+      spriteID: ac579b23f77e84920800000000000000
+      internalID: 2974882087376090570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run2_2
+      name: Keybound Menu Art_1
       rect:
         serializedVersion: 2
-        x: 265
-        y: 291
-        width: 47
-        height: 40
+        x: 3119
+        y: 0
+        width: 107
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0750df5c101c61220800000000000000
-      internalID: 2456362860138005872
+      spriteID: a2ceaa13d89940bf0800000000000000
+      internalID: -358993238580073430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run2_3
+      name: Keybound Menu Art_2
       rect:
         serializedVersion: 2
-        x: 280
-        y: 216
-        width: 44
-        height: 37
+        x: 3295
+        y: 0
+        width: 299
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,30 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b062887f167aab70800000000000000
-      internalID: 8911064690243821749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run2_4
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 143
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 304d04d9fec17de20800000000000000
-      internalID: 3375198261198509059
+      spriteID: 3b86c62f542aa02f0800000000000000
+      internalID: -1005813145460250445
       vertices: []
       indices: 
       edges: []
@@ -238,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Run2_0: -1071083020363879801
-      Run2_1: 3398041401215206678
-      Run2_2: 2456362860138005872
-      Run2_3: 8911064690243821749
-      Run2_4: 3375198261198509059
+      Keybound Menu Art_0: 2974882087376090570
+      Keybound Menu Art_1: -358993238580073430
+      Keybound Menu Art_2: -1005813145460250445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

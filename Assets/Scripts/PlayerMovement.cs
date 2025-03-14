@@ -2,22 +2,16 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpPower = 10f;
-    [SerializeField] private float wallJumpPowerX = 7f;
-    [SerializeField] private float wallJumpPowerY = 12f;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private LayerMask wallLayer;
-
     private Rigidbody2D body;
-    private BoxCollider2D boxCollider;
-    private float wallJumpCooldown;
+    private CapsuleCollider2D boxCollider;
     private float horizontalInput;
     private Animator anim;
-    private bool isWallSliding;
 
     private void Awake() {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        boxCollider = GetComponent<BoxCollider2D>();
+        boxCollider = GetComponent<CapsuleCollider2D>();
     }
 
     private void Update() {
@@ -35,59 +29,29 @@ public class PlayerMovement : MonoBehaviour {
 
         // Set animator parameters
         anim.SetBool("run", horizontalInput != 0);
+        anim.SetBool("grounded", isGrounded());
 
-        // Wall slide logic
-        if (wallJumpCooldown > 0.2f) {
-            body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
+        body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
 
-            if (onWall() && !isGrounded()) {
-                isWallSliding = true;
-                body.gravityScale = 5; // gravity while sliding
-
-                // If moving into the wall, prevent upward movement
-                if (body.linearVelocity.y > 0) {
-                    body.linearVelocity = new Vector2(0, body.linearVelocity.y * 0.5f);
-                } else {
-                    body.linearVelocity = new Vector2(0, -2f); // Ensure smooth sliding down
-                }
-            }
-            else {
-                isWallSliding = false;
-                body.gravityScale = 8;
-            }
-
-            if (Input.GetKeyDown(KeyCode.UpArrow)) {
-                Jump();
-            }
-        }
-        else {
-            wallJumpCooldown += Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.UpArrow)) {
+            Jump();
         }
     }
 
     private void Jump() {
         if (isGrounded()) {
             body.linearVelocity = new Vector2(body.linearVelocity.x, jumpPower);
-        }
-        else if (onWall() && isWallSliding) {
-            int wallDirection = GetWallDirection();
-            body.linearVelocity = new Vector2(wallDirection * wallJumpPowerX, wallJumpPowerY);
-            wallJumpCooldown = 0;
+            anim.SetTrigger("jump");
         }
     }
 
-    private bool isGrounded() {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+    public bool isGrounded() {
+        // Reduce the box size to only check the bottom of the player
+        float extraHeight = 0.1f;
+        Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * 0.8f, 0.1f);
+        Vector2 boxCenter = new Vector2(boxCollider.bounds.center.x, boxCollider.bounds.min.y);
+
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCenter, boxSize, 0, Vector2.down, extraHeight, groundLayer);
         return raycastHit.collider != null;
-    }
-
-    private bool onWall() {
-        return Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.left, 0.1f, wallLayer) ||
-               Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.right, 0.1f, wallLayer);
-    }
-
-    private int GetWallDirection() {
-        bool onLeftWall = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.left, 0.1f, wallLayer);
-        return onLeftWall ? 1 : -1; // 1 if on left wall, -1 if on right wall
     }
 }

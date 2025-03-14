@@ -3,19 +3,23 @@ using UnityEngine;
 public class RoomCheck : MonoBehaviour
 {
     public bool playerInRoom = false;
-    void OnTriggerEnter2D (Collider2D collision) 
-    //NOTE: maybe add like a 2 second cooldown so jumping and hitting your head into the next room doesn't count as being in the room
+    private float timeEntered;
+
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-        {
-            playerInRoom = true;
-        }
+        if (collision.CompareTag("Player"))
+            timeEntered = Time.time; 
     }
-    void OnTriggerExit2D (Collider2D collision)
+
+    void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-        {
+        if (collision.CompareTag("Player") && !playerInRoom && Time.time - timeEntered >= 1f)
+            playerInRoom = true;
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
             playerInRoom = false;
-        }
     }
 }

@@ -1,22 +1,49 @@
 fileFormatVersion: 2
-guid: dde90fd4705c02247bdfdd7f3a4552d5
+guid: 7bf89fc58f659f6489125e9bd6415cd8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1071083020363879801
-    second: Run2_0
+      213: -6183373998783906815
+    second: broken bricks_0
   - first:
-      213: 3398041401215206678
-    second: Run2_1
+      213: -5337622181310035122
+    second: broken bricks_1
   - first:
-      213: 2456362860138005872
-    second: Run2_2
+      213: 1048442483205479263
+    second: broken bricks_2
   - first:
-      213: 8911064690243821749
-    second: Run2_3
+      213: 1404765088543846327
+    second: broken bricks_3
   - first:
-      213: 3375198261198509059
-    second: Run2_4
+      213: 8803213996453115587
+    second: broken bricks_4
+  - first:
+      213: 2917305243457195295
+    second: broken bricks_5
+  - first:
+      213: 5672667835155486114
+    second: broken bricks_6
+  - first:
+      213: -5051462849291482785
+    second: broken bricks_7
+  - first:
+      213: 3754397643801243879
+    second: broken bricks_8
+  - first:
+      213: -1883615884346749265
+    second: broken bricks_9
+  - first:
+      213: 4224376044412855972
+    second: broken bricks_10
+  - first:
+      213: -1323723117042593022
+    second: broken bricks_11
+  - first:
+      213: -8364501454970310002
+    second: broken bricks_12
+  - first:
+      213: -3982742854651486722
+    second: broken bricks_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +85,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -87,7 +114,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,111 +152,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run2_0
+      name: broken bricks_0
       rect:
         serializedVersion: 2
-        x: 262
-        y: 363
-        width: 47
-        height: 44
+        x: 2134
+        y: 1517
+        width: 422
+        height: 278
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78a2246faafb221f0800000000000000
-      internalID: -1071083020363879801
+      spriteID: 10c3919eb1e303aa0800000000000000
+      internalID: -6183373998783906815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run2_1
+      name: broken bricks_1
       rect:
         serializedVersion: 2
-        x: 331
-        y: 0
-        width: 403
-        height: 587
+        x: 2644
+        y: 1519
+        width: 422
+        height: 278
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 615c08b96a4482f20800000000000000
-      internalID: 3398041401215206678
+      spriteID: e4b05c1f7e4fce5b0800000000000000
+      internalID: -5337622181310035122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run2_2
+      name: broken bricks_2
       rect:
         serializedVersion: 2
-        x: 265
-        y: 291
-        width: 47
-        height: 40
+        x: 3151
+        y: 1519
+        width: 427
+        height: 278
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0750df5c101c61220800000000000000
-      internalID: 2456362860138005872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run2_3
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 216
-        width: 44
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b062887f167aab70800000000000000
-      internalID: 8911064690243821749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run2_4
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 143
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 304d04d9fec17de20800000000000000
-      internalID: 3375198261198509059
+      spriteID: f5b14e232e0dc8e00800000000000000
+      internalID: 1048442483205479263
       vertices: []
       indices: 
       edges: []
@@ -238,7 +221,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 535d48a85802f88439fd5133025050cb
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +231,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Run2_0: -1071083020363879801
-      Run2_1: 3398041401215206678
-      Run2_2: 2456362860138005872
-      Run2_3: 8911064690243821749
-      Run2_4: 3375198261198509059
+      broken bricks_0: -6183373998783906815
+      broken bricks_1: -5337622181310035122
+      broken bricks_10: 4224376044412855972
+      broken bricks_11: -1323723117042593022
+      broken bricks_12: -8364501454970310002
+      broken bricks_13: -3982742854651486722
+      broken bricks_2: 1048442483205479263
+      broken bricks_3: 1404765088543846327
+      broken bricks_4: 8803213996453115587
+      broken bricks_5: 2917305243457195295
+      broken bricks_6: 5672667835155486114
+      broken bricks_7: -5051462849291482785
+      broken bricks_8: 3754397643801243879
+      broken bricks_9: -1883615884346749265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

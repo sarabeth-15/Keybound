@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 7941c7b217264894db7b146ad6599dbe
+guid: 7db07fd72442cab4b85f0bbf70a4eacb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4953619302554583663
-    second: BrickOFF_0
+      213: 6889034313212091397
+    second: Jumps 0005_0
+  - first:
+      213: -267427098980778092
+    second: Jumps 0005_1
+  - first:
+      213: 1438828910714605511
+    second: Jumps 0005_2
+  - first:
+      213: 4695182598008709216
+    second: Jumps 0005_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BrickOFF_0
+      name: Jumps 0005_0
       rect:
         serializedVersion: 2
-        x: 286
-        y: 366
-        width: 436
-        height: 289
+        x: 191
+        y: 802
+        width: 41
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f62c841a28aceb440800000000000000
-      internalID: 4953619302554583663
+      spriteID: 50cdb7c4534ca9f50800000000000000
+      internalID: 6889034313212091397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumps 0005_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 631
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fffe96878e94cf0800000000000000
+      internalID: -267427098980778092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumps 0005_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 530
+        height: 792
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfc4b3654fb7f310800000000000000
+      internalID: 1438828910714605511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumps 0005_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 522
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060a7ed52b3a82140800000000000000
+      internalID: 4695182598008709216
       vertices: []
       indices: 
       edges: []
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BrickOFF_0: 4953619302554583663
+      Jumps 0005_0: 6889034313212091397
+      Jumps 0005_1: -267427098980778092
+      Jumps 0005_2: 1438828910714605511
+      Jumps 0005_3: 4695182598008709216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -3,15 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
     void Update() {
-        if (Input.GetKeyDown(KeyCode.T)) {
+        if (Input.GetKeyDown(KeyCode.S)) {
             SceneManager.LoadScene("Level0"); 
         }
 
-        if (Input.GetKeyDown(KeyCode.S)) {
-            SceneManager.LoadScene("Settings"); 
+        if (Input.GetKeyDown(KeyCode.O)) {
+            SceneManager.LoadScene("Options"); 
         }
 
-        if (Input.GetKeyDown(KeyCode.V)) {
+        if (Input.GetKeyDown(KeyCode.Q)) {
             QuitGame();
         }    
     }

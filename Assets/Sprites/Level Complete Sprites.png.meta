@@ -1,22 +1,37 @@
 fileFormatVersion: 2
-guid: dde90fd4705c02247bdfdd7f3a4552d5
+guid: fbc77382fb861c54e9eae052376fb2fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1071083020363879801
-    second: Run2_0
+      213: 5792570830295163171
+    second: Level Complete Sprites_0
   - first:
-      213: 3398041401215206678
-    second: Run2_1
+      213: -4878467350140891048
+    second: Level Complete Sprites_1
   - first:
-      213: 2456362860138005872
-    second: Run2_2
+      213: 7225038460296975530
+    second: Level Complete Sprites_2
   - first:
-      213: 8911064690243821749
-    second: Run2_3
+      213: 2568491529675184345
+    second: Level Complete Sprites_3
   - first:
-      213: 3375198261198509059
-    second: Run2_4
+      213: -285560301790542441
+    second: Level Complete Sprites_4
+  - first:
+      213: -3163130600427441784
+    second: Level Complete Sprites_5
+  - first:
+      213: 1434260302803924822
+    second: Level Complete Sprites_6
+  - first:
+      213: -536524522150057913
+    second: Level Complete Sprites_7
+  - first:
+      213: 1426368558271902901
+    second: Level Complete Sprites_8
+  - first:
+      213: -6839324116993915658
+    second: Level Complete Sprites_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +73,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -87,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,111 +140,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run2_0
+      name: Level Complete Sprites_0
       rect:
         serializedVersion: 2
-        x: 262
-        y: 363
-        width: 47
-        height: 44
+        x: 998
+        y: 1714
+        width: 2585
+        height: 412
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78a2246faafb221f0800000000000000
-      internalID: -1071083020363879801
+      spriteID: 3216804da78536050800000000000000
+      internalID: 5792570830295163171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run2_1
+      name: Level Complete Sprites_1
       rect:
         serializedVersion: 2
-        x: 331
-        y: 0
-        width: 403
-        height: 587
+        x: 1107
+        y: 330
+        width: 1311
+        height: 1331
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 615c08b96a4482f20800000000000000
-      internalID: 3398041401215206678
+      spriteID: 850d282dac33c4cb0800000000000000
+      internalID: -4878467350140891048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run2_2
+      name: Level Complete Sprites_2
       rect:
         serializedVersion: 2
-        x: 265
-        y: 291
-        width: 47
-        height: 40
+        x: 2748
+        y: 712
+        width: 913
+        height: 278
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0750df5c101c61220800000000000000
-      internalID: 2456362860138005872
+      spriteID: aa45982233e744460800000000000000
+      internalID: 7225038460296975530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run2_3
+      name: Level Complete Sprites_5
       rect:
         serializedVersion: 2
-        x: 280
-        y: 216
-        width: 44
-        height: 37
+        x: 2601
+        y: 82
+        width: 1261
+        height: 407
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b062887f167aab70800000000000000
-      internalID: 8911064690243821749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run2_4
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 143
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 304d04d9fec17de20800000000000000
-      internalID: 3375198261198509059
+      spriteID: 881ba575a7d4a14d0800000000000000
+      internalID: -3163130600427441784
       vertices: []
       indices: 
       edges: []
@@ -238,7 +231,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 9db38eb264ef3d74182528de35a9b76f
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +241,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Run2_0: -1071083020363879801
-      Run2_1: 3398041401215206678
-      Run2_2: 2456362860138005872
-      Run2_3: 8911064690243821749
-      Run2_4: 3375198261198509059
+      Level Complete Sprites_3: -1714832616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
