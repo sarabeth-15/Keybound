@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject optionsMenu;
     public static bool IsPaused { get; private set; }
+    public static bool IsOptions { get; private set; }
 
-    public static HashSet<KeyCode> blockedKeys = new HashSet<KeyCode>();
+    public static HashSet<KeyCode> blockedKeys = new HashSet<KeyCode>(); 
     public static float resumeM = 0; 
 
     private void Update() {
@@ -17,6 +19,14 @@ public class PauseMenu : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
+
+            if (optionsMenu.activeSelf) {
+                optionsMenu.SetActive(false);
+                pauseMenu.SetActive(true);
+                IsOptions = false; 
+                return; 
+            }
+
             if (IsPaused) {
                 pauseMenu.SetActive(false);
                 IsPaused = false;
@@ -25,9 +35,10 @@ public class PauseMenu : MonoBehaviour
             } else {
                 pauseMenu.SetActive(true);
                 IsPaused = true;
+                IsOptions = false; 
                 Time.timeScale = 0;
             }
-             
+
         }
 
         if (IsPaused) {
@@ -39,7 +50,7 @@ public class PauseMenu : MonoBehaviour
             }
 
             if (Input.GetKeyDown(KeyCode.S)) {
-                SceneManager.LoadScene("Options");
+                optionsMenu.SetActive(true);
                 Time.timeScale = 1; 
             }
 
@@ -60,7 +71,7 @@ public class PauseMenu : MonoBehaviour
     }
 
     public static bool IsKeyBlocked(KeyCode key) {
-        if (IsPaused) return true;
+        if (IsPaused || IsOptions) return true;
         if (key == KeyCode.R && resumeM > 0f) return true;
         return false; 
     }
