@@ -4,22 +4,21 @@ using TMPro;
 
 public class LevelComplete : MonoBehaviour {
 
-    [SerializeField] private GameObject levelCompleteImage; 
-    [SerializeField] private TextMeshProUGUI timeText; 
+    [SerializeField] private TextMeshProUGUI timeText;
 
-    public void Show(float finalTime) {
-        levelCompleteImage.SetActive(true); 
-        timeText.text = "Time: " + finalTime.ToString("F2") + " seconds";
+    void Start() {
+        DisplayTime();
     }
 
-    void Update() {
+    void DisplayTime() {
+        // Get the final time stored in LevelResult
+        float time = LevelResult.finalTime;
 
-        if (Input.GetKeyDown(KeyCode.N)) {
-            Debug.Log("Next Level Unavailable");
-        }
+        // Convert time to minutes and seconds
+        int minutes = Mathf.FloorToInt(time / 60);
+        int seconds = Mathf.FloorToInt(time % 60);
 
-        if (Input.GetKeyDown(KeyCode.R)) {
-            SceneManager.LoadScene("Level0"); 
-        }
+        // Format and display the time in the UI
+        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }

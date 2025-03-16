@@ -12,7 +12,8 @@ public class LevelEndTrigger : MonoBehaviour {
             completed = true;
 
             if (LevelTimer.Instance != null) {
-                LevelTimer.Instance.StopTimer(); 
+                LevelTimer.Instance.StopTimer();
+                LevelResult.finalTime = LevelTimer.Instance.GetElapsedTime(); 
             }
         }
         SceneManager.LoadScene("LevelComplete");
