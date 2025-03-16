@@ -6,15 +6,14 @@ public class LetterOverlay : MonoBehaviour
     private GameObject letterObject; 
     private TogglePlatform togglePlatform;
     private RoomCheck room;
+
     [SerializeField] private Sprite letterSprite;
     [SerializeField] private Color32 colorOFF; 
-    [SerializeField] private Color32 colorON; 
+    [SerializeField] private Color32 colorON;
 
-    private void Start()
-    {
+    private void Start() {
         togglePlatform = GetComponentInParent<TogglePlatform>();
-        if (togglePlatform == null)
-        {
+        if (togglePlatform == null) {
             Debug.LogError("LetterOverlay must be attached to a child of an object with TogglePlatform!");
             return;
         }
@@ -31,27 +30,23 @@ public class LetterOverlay : MonoBehaviour
         letterRenderer.sprite = letterSprite;
         letterRenderer.sortingOrder = GetComponentInParent<SpriteRenderer>().sortingOrder + 1; // Ensure it's on top
 
-        colorOFF = new Color32 (32, 25, 29, 255);
-        colorON = new Color32 (48, 37, 44, 255); 
+        colorOFF = new Color32(32, 25, 29, 255);
+        colorON = new Color32(48, 37, 44, 255);
 
         // Set initial color to Yellow
         letterRenderer.color = colorOFF;
-
-        // Apply initial visibility from settings
-        if (SettingsManager.Instance != null) {
-            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
-        }
-    }
+    } 
 
     private void Update()
     {
         
         if (togglePlatform == null || room == null || letterRenderer == null) return;
-        if (PauseMenu.IsKeyBlocked(togglePlatform.toggleKey)) return;
 
-        if (letterObject != null) {
-            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled); 
+        if (SettingsManager.Instance != null && letterObject != null) {
+            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
         }
+
+        if (PauseMenu.IsKeyBlocked(togglePlatform.toggleKey)) return;
 
         bool isKeyHeld = false;
 

@@ -7,18 +7,17 @@ public class SettingsManager : MonoBehaviour {
     public bool letterOverlaysEnabled = true;
 
     private void Awake() {
-        if (Instance == null) {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else {
+        if (Instance != null) {
             Destroy(gameObject);
+            return; 
         }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject); 
     }
 
     public void SetLetterOverlaysEnabled(bool enabled) {
         letterOverlaysEnabled = enabled;
-        Debug.Log("Letter overlays " + (enabled ? "enabled" : "disabled"));
     }
 
 }

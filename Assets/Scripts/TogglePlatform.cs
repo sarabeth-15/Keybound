@@ -21,8 +21,10 @@ public class TogglePlatform : MonoBehaviour
         // Brick starts with disabled sprite, collider, and gravity
         platformCollider.enabled = false;
         originalScale = transform.localScale;
-        rb.isKinematic = true; 
-        rb.linearVelocity = Vector2.zero;        
+        if (rb != null) {
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            rb.linearVelocity = Vector2.zero;
+        }
         spriteRenderer.sprite = brickOFF;
     }
     private void Update()
@@ -61,9 +63,9 @@ public class TogglePlatform : MonoBehaviour
             transform.localScale = originalScale * 1.1f;
         }
         // When key is released, brick falls
-        else if (used && !isKeyHeld)
+        else if (used && !isKeyHeld && rb != null)
         {
-            rb.isKinematic = false;
+            rb.bodyType = RigidbodyType2D.Dynamic;
             rb.gravityScale = 5;                            
             rb.mass = 300;                          //CHANGE MASS OF FALLING BRICK HERE
             spriteRenderer.sprite = brickOFF;
