@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OptionsMenuSync : MonoBehaviour {
+public class OptionsCanvasSync : MonoBehaviour {
 
     private void Update() {
         if (SettingsManager.Instance == null) return;

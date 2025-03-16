@@ -73,6 +73,9 @@ public class PauseMenu : MonoBehaviour
     }
 
     public static bool IsKeyBlocked(KeyCode key) {
+
+        if (SceneManager.GetActiveScene().name == "MainMenu") return false; 
+
         if (IsPaused || IsOptions) return true;
         if (key == KeyCode.R && resumeM > 0f) return true;
         return false; 

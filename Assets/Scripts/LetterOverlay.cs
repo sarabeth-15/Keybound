@@ -1,9 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LetterOverlay : MonoBehaviour
 {
     private SpriteRenderer letterRenderer;
-    private GameObject letterObject; 
+    private GameObject letterObject;
+    private bool previousOverlayEnabled = true; 
     private TogglePlatform togglePlatform;
     private RoomCheck room;
 
@@ -35,6 +36,11 @@ public class LetterOverlay : MonoBehaviour
 
         // Set initial color to Yellow
         letterRenderer.color = colorOFF;
+
+        // Apply initial visibility
+        if (SettingsManager.Instance != null) {
+            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
+        }
     } 
 
     private void Update()
@@ -42,17 +48,32 @@ public class LetterOverlay : MonoBehaviour
         
         if (togglePlatform == null || room == null || letterRenderer == null) return;
 
-        if (SettingsManager.Instance != null && letterObject != null) {
-            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
+        if (SettingsManager.Instance != null && letterRenderer != null) {
+            bool shouldBeVisible = SettingsManager.Instance.letterOverlaysEnabled;
+
+            if (shouldBeVisible != previousOverlayEnabled) {
+                letterRenderer.enabled = shouldBeVisible;
+                previousOverlayEnabled = shouldBeVisible;
+
+                if (shouldBeVisible) {
+                    if (room.playerInRoom) // Only run if player is in the room
+       {
+                        bool isKeyHeld = Input.GetKey(togglePlatform.toggleKey);
+                        Color32 currentColor = isKeyHeld ? colorON : colorOFF;
+                        letterRenderer.color = currentColor;
+                    }
+                    else {
+                        letterRenderer.color = colorOFF;
+                    }
+                }
+            }
         }
 
         if (PauseMenu.IsKeyBlocked(togglePlatform.toggleKey)) return;
 
-        bool isKeyHeld = false;
-
         if (room.playerInRoom) // Only run if player is in the room
         {
-            isKeyHeld = Input.GetKey(togglePlatform.toggleKey);
+            bool isKeyHeld = Input.GetKey(togglePlatform.toggleKey);
             Color32 currentColor = isKeyHeld ? colorON : colorOFF;
             letterRenderer.color = currentColor;
         }
