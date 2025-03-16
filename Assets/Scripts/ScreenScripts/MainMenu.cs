@@ -11,7 +11,14 @@ public class MainMenu : MonoBehaviour {
         }
 
         if (Input.GetKeyDown(KeyCode.O)) {
-            optionsMenu.SetActive(true);    
+            optionsMenu.SetActive(true);  
+           
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (optionsMenu.activeSelf) {
+                optionsMenu.SetActive(false);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Q)) {

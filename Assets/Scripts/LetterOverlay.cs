@@ -3,6 +3,7 @@ using UnityEngine;
 public class LetterOverlay : MonoBehaviour
 {
     private SpriteRenderer letterRenderer;
+    private GameObject letterObject; 
     private TogglePlatform togglePlatform;
     private RoomCheck room;
     [SerializeField] private Sprite letterSprite;
@@ -42,6 +43,10 @@ public class LetterOverlay : MonoBehaviour
         
         if (togglePlatform == null || room == null || letterRenderer == null) return;
         if (PauseMenu.IsKeyBlocked(togglePlatform.toggleKey)) return;
+
+        if (letterObject != null) {
+            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled); 
+        }
 
         bool isKeyHeld = false;
 
