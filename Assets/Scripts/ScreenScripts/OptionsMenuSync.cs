@@ -12,7 +12,7 @@ public class OptionsMenuSync : MonoBehaviour {
         }
 
         // Press O to enable letter overlays
-        if (Input.GetKeyDown(KeyCode.O)) {
+        if (Input.GetKeyDown(KeyCode.N)) {
             SettingsManager.Instance.SetLetterOverlaysEnabled(true);
             Debug.Log("Letter overlays enabled."); 
         }

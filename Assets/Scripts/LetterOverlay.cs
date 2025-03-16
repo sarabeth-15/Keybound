@@ -22,7 +22,7 @@ public class LetterOverlay : MonoBehaviour
         room = togglePlatform.room;
 
         // Create a new object for the letter overlay
-        GameObject letterObject = new GameObject("LetterOverlay");
+        letterObject = new GameObject("LetterOverlay");
         letterObject.transform.SetParent(transform);
         letterObject.transform.localPosition = Vector3.zero; // Align with the platform
 
@@ -36,6 +36,11 @@ public class LetterOverlay : MonoBehaviour
 
         // Set initial color to Yellow
         letterRenderer.color = colorOFF;
+
+        // Apply initial visibility from settings
+        if (SettingsManager.Instance != null) {
+            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
+        }
     }
 
     private void Update()
