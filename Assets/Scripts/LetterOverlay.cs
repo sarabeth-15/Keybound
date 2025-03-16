@@ -1,15 +1,15 @@
-﻿using UnityEngine;
+﻿using System.Collections; 
+using UnityEngine;
 
-public class LetterOverlay : MonoBehaviour
-{
+public class LetterOverlay : MonoBehaviour {
+
     private SpriteRenderer letterRenderer;
     private GameObject letterObject;
-    private bool previousOverlayEnabled = true; 
     private TogglePlatform togglePlatform;
     private RoomCheck room;
 
     [SerializeField] private Sprite letterSprite;
-    [SerializeField] private Color32 colorOFF; 
+    [SerializeField] private Color32 colorOFF;
     [SerializeField] private Color32 colorON;
 
     private void Start() {
@@ -38,42 +38,24 @@ public class LetterOverlay : MonoBehaviour
         letterRenderer.color = colorOFF;
 
         // Apply initial visibility
-        if (SettingsManager.Instance != null) {
-            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
-        }
-    } 
+        StartCoroutine(InitializeOverlayVisibility());
+    }
 
-    private void Update()
-    {
-        
+    private void Update() {
+
         if (togglePlatform == null || room == null || letterRenderer == null) return;
 
-        if (SettingsManager.Instance != null && letterRenderer != null) {
-            bool shouldBeVisible = SettingsManager.Instance.letterOverlaysEnabled;
-
-            if (shouldBeVisible != previousOverlayEnabled) {
-                letterRenderer.enabled = shouldBeVisible;
-                previousOverlayEnabled = shouldBeVisible;
-
-                if (shouldBeVisible) {
-                    if (room.playerInRoom) // Only run if player is in the room
-       {
-                        bool isKeyHeld = Input.GetKey(togglePlatform.toggleKey);
-                        Color32 currentColor = isKeyHeld ? colorON : colorOFF;
-                        letterRenderer.color = currentColor;
-                    }
-                    else {
-                        letterRenderer.color = colorOFF;
-                    }
-                }
-            }
+        if (SettingsManager.Instance != null && letterObject != null) {
+            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
         }
 
         if (PauseMenu.IsKeyBlocked(togglePlatform.toggleKey)) return;
 
+        bool isKeyHeld = false;
+
         if (room.playerInRoom) // Only run if player is in the room
         {
-            bool isKeyHeld = Input.GetKey(togglePlatform.toggleKey);
+            isKeyHeld = Input.GetKey(togglePlatform.toggleKey);
             Color32 currentColor = isKeyHeld ? colorON : colorOFF;
             letterRenderer.color = currentColor;
         }
@@ -81,4 +63,23 @@ public class LetterOverlay : MonoBehaviour
             letterRenderer.color = colorOFF;
         }
     }
+
+    public static void SyncAllOverlays(bool enabled) {
+        var overlays = Object.FindObjectsByType<LetterOverlay>(FindObjectsSortMode.None);
+        foreach (var overlay in overlays) {
+            if (overlay.letterObject != null) {
+                overlay.letterObject.SetActive(enabled);
+            }
+        }
+    }
+
+    private IEnumerator InitializeOverlayVisibility() {
+        yield return null; // wait one frame
+        if (SettingsManager.Instance != null && letterObject != null) {
+            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
+        }
+    }
 }
+
+
+

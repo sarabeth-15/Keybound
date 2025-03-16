@@ -80,8 +80,12 @@ public class PauseMenu : MonoBehaviour
         if (key == KeyCode.R && resumeM > 0f) return true;
         return false; 
     }
-    
-  
+    public static void ForceUnpause() {
+        IsPaused = false;
+        IsOptions = false;
+        resumeM = 0f;
+        blockedKeys.Clear();
+    }
 
 }
 

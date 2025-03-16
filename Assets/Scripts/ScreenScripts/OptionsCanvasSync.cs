@@ -11,7 +11,7 @@ public class OptionsCanvasSync : MonoBehaviour {
             Debug.Log("Letter overlays disabled."); 
         }
 
-        // Press O to enable letter overlays
+        // Press N to enable letter overlays
         if (Input.GetKeyDown(KeyCode.N)) {
             SettingsManager.Instance.SetLetterOverlaysEnabled(true);
             Debug.Log("Letter overlays enabled."); 

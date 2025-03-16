@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections; 
 
 public class SettingsManager : MonoBehaviour {
 
@@ -13,11 +15,18 @@ public class SettingsManager : MonoBehaviour {
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject); 
+        DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     public void SetLetterOverlaysEnabled(bool enabled) {
         letterOverlaysEnabled = enabled;
+        LetterOverlay.SyncAllOverlays(enabled);
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        // Sync overlays when a new scene is loaded
+        LetterOverlay.SyncAllOverlays(letterOverlaysEnabled);
     }
 
 }
