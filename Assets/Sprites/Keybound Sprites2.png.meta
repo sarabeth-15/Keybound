@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: fb6120f6a1a39bf45b46a6bfadb2cd86
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2157063286397551520
+    second: Keybound Sprites2_0
+  - first:
+      213: -6304928968056414596
+    second: Keybound Sprites2_1
+  - first:
+      213: 4894475728826981719
+    second: Keybound Sprites2_2
+  - first:
+      213: -8610964318946932165
+    second: Keybound Sprites2_3
+  - first:
+      213: -3592570421334845673
+    second: Keybound Sprites2_4
+  - first:
+      213: 5466804982295955361
+    second: Keybound Sprites2_5
+  - first:
+      213: -1643211819772474817
+    second: Keybound Sprites2_6
+  - first:
+      213: -1918433658911534985
+    second: Keybound Sprites2_7
+  - first:
+      213: 8391331440330036943
+    second: Keybound Sprites2_8
+  - first:
+      213: -861784735600765447
+    second: Keybound Sprites2_9
+  - first:
+      213: -8706642387199461432
+    second: Keybound Sprites2_10
+  - first:
+      213: 3308785776161288578
+    second: Keybound Sprites2_11
+  - first:
+      213: 644729393122304562
+    second: Keybound Sprites2_12
+  - first:
+      213: -4661152114795077615
+    second: Keybound Sprites2_13
+  - first:
+      213: -8937333869694780283
+    second: Keybound Sprites2_14
+  - first:
+      213: 3464382578299510994
+    second: Keybound Sprites2_15
+  - first:
+      213: 4279701970525699054
+    second: Keybound Sprites2_16
+  - first:
+      213: -4544334613226443570
+    second: Keybound Sprites2_17
+  - first:
+      213: 6328133908307194250
+    second: Keybound Sprites2_18
+  - first:
+      213: -2088124626321128955
+    second: Keybound Sprites2_19
+  - first:
+      213: 5828634709441173260
+    second: Keybound Sprites2_20
+  - first:
+      213: 7841743314936298917
+    second: Keybound Sprites2_21
+  - first:
+      213: 3628028461006669920
+    second: Keybound Sprites2_22
+  - first:
+      213: -3309512255867248764
+    second: Keybound Sprites2_23
+  - first:
+      213: -9127778000598358386
+    second: Keybound Sprites2_24
+  - first:
+      213: 2786732132756679321
+    second: Keybound Sprites2_25
+  - first:
+      213: -12184170408888780
+    second: Keybound Sprites2_26
+  - first:
+      213: -2371927084695270837
+    second: Keybound Sprites2_27
+  - first:
+      213: 4306892628175583541
+    second: Keybound Sprites2_28
+  - first:
+      213: 8812380470512652333
+    second: Keybound Sprites2_29
+  - first:
+      213: -2111099752160209623
+    second: Keybound Sprites2_30
+  - first:
+      213: 4322671522640624655
+    second: Keybound Sprites2_31
+  - first:
+      213: 7713908787089237704
+    second: Keybound Sprites2_32
+  - first:
+      213: 4840055886543205912
+    second: Keybound Sprites2_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Keybound Sprites2_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1772
+        width: 579
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a343cf51ad6fed10800000000000000
+      internalID: 2157063286397551520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_1
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1974
+        width: 962
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e5dec22846088a0800000000000000
+      internalID: -6304928968056414596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_2
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 499
+        width: 1603
+        height: 1627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75dd08a4ebbace340800000000000000
+      internalID: 4894475728826981719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_3
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1721
+        width: 386
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3aca932395bf7880800000000000000
+      internalID: -8610964318946932165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_4
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 1714
+        width: 579
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717d2cd6c30a42ec0800000000000000
+      internalID: -3592570421334845673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1519
+        width: 150
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a70612ca2efddb40800000000000000
+      internalID: 5466804982295955361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_6
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1524
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a0db75e832239e0800000000000000
+      internalID: -1643211819772474817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_7
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1464
+        width: 702
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770dc6360ca5065e0800000000000000
+      internalID: -1918433658911534985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_8
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 1463
+        width: 518
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6507d5c7ff37470800000000000000
+      internalID: 8391331440330036943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1316
+        width: 145
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f599a159535a04f0800000000000000
+      internalID: -861784735600765447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_10
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1324
+        width: 145
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7fd9ce0eacb2780800000000000000
+      internalID: -8706642387199461432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_11
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 698
+        width: 335
+        height: 740
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28175f9f12b2bed20800000000000000
+      internalID: 3308785776161288578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_12
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1112
+        width: 150
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232ee4597f982f800800000000000000
+      internalID: 644729393122304562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_13
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1129
+        width: 148
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1102491f8d2405fb0800000000000000
+      internalID: -4661152114795077615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_14
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 911
+        width: 150
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c76c1923638f380800000000000000
+      internalID: -8937333869694780283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_15
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 919
+        width: 150
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d028919995f31030800000000000000
+      internalID: 3464382578299510994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_16
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 701
+        width: 150
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb39b1744e846b30800000000000000
+      internalID: 4279701970525699054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_17
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 707
+        width: 150
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc20260fb74fe0c0800000000000000
+      internalID: -4544334613226443570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_18
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 504
+        width: 150
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8131cff24c02d750800000000000000
+      internalID: 6328133908307194250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_19
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 508
+        width: 148
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502426937bd7503e0800000000000000
+      internalID: -2088124626321128955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_20
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 21
+        width: 1659
+        height: 641
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07d0c5036873e050800000000000000
+      internalID: 5828634709441173260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_21
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 296
+        width: 148
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad72926ff773dc60800000000000000
+      internalID: 7841743314936298917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_22
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 311
+        width: 150
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0684f45c9a8595230800000000000000
+      internalID: 3628028461006669920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_23
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 71
+        width: 141
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f1b3943204212d0800000000000000
+      internalID: -3309512255867248764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_24
+      rect:
+        serializedVersion: 2
+        x: 3407
+        y: 81
+        width: 133
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86a5bdf44e935180800000000000000
+      internalID: -9127778000598358386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_25
+      rect:
+        serializedVersion: 2
+        x: 3641
+        y: 319
+        width: 132
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ae0292c167ca620800000000000000
+      internalID: 2786732132756679321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_26
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 84
+        width: 144
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43635e2cf86b4dff0800000000000000
+      internalID: -12184170408888780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_27
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 92
+        width: 144
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a4c9b22e8351fd0800000000000000
+      internalID: -2371927084695270837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_28
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 133
+        width: 49
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5397724c60825cb30800000000000000
+      internalID: 4306892628175583541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_29
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 133
+        width: 64
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d201f72195ddb4a70800000000000000
+      internalID: 8812380470512652333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_30
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 131
+        width: 66
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9255313e5fdd3b2e0800000000000000
+      internalID: -2111099752160209623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_31
+      rect:
+        serializedVersion: 2
+        x: 3675
+        y: 203
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0cf0bbe8d63dfb30800000000000000
+      internalID: 4322671522640624655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_32
+      rect:
+        serializedVersion: 2
+        x: 2822
+        y: 128
+        width: 64
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6e73cfb2f4d0b60800000000000000
+      internalID: 7713908787089237704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keybound Sprites2_33
+      rect:
+        serializedVersion: 2
+        x: 3677
+        y: 77
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81632726f255b2340800000000000000
+      internalID: 4840055886543205912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6e50e27c350b45e40bd6e9d8d68eb393
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Keybound Sprites2_0: 2157063286397551520
+      Keybound Sprites2_1: -6304928968056414596
+      Keybound Sprites2_10: -8706642387199461432
+      Keybound Sprites2_11: 3308785776161288578
+      Keybound Sprites2_12: 644729393122304562
+      Keybound Sprites2_13: -4661152114795077615
+      Keybound Sprites2_14: -8937333869694780283
+      Keybound Sprites2_15: 3464382578299510994
+      Keybound Sprites2_16: 4279701970525699054
+      Keybound Sprites2_17: -4544334613226443570
+      Keybound Sprites2_18: 6328133908307194250
+      Keybound Sprites2_19: -2088124626321128955
+      Keybound Sprites2_2: 4894475728826981719
+      Keybound Sprites2_20: 5828634709441173260
+      Keybound Sprites2_21: 7841743314936298917
+      Keybound Sprites2_22: 3628028461006669920
+      Keybound Sprites2_23: -3309512255867248764
+      Keybound Sprites2_24: -9127778000598358386
+      Keybound Sprites2_25: 2786732132756679321
+      Keybound Sprites2_26: -12184170408888780
+      Keybound Sprites2_27: -2371927084695270837
+      Keybound Sprites2_28: 4306892628175583541
+      Keybound Sprites2_29: 8812380470512652333
+      Keybound Sprites2_3: -8610964318946932165
+      Keybound Sprites2_30: -2111099752160209623
+      Keybound Sprites2_31: 4322671522640624655
+      Keybound Sprites2_32: 7713908787089237704
+      Keybound Sprites2_33: 4840055886543205912
+      Keybound Sprites2_4: -3592570421334845673
+      Keybound Sprites2_5: 5466804982295955361
+      Keybound Sprites2_6: -1643211819772474817
+      Keybound Sprites2_7: -1918433658911534985
+      Keybound Sprites2_8: 8391331440330036943
+      Keybound Sprites2_9: -861784735600765447
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
