@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -397,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Castle_0: -6754239384357436178
+      Castle_1: 6906767639317418099
+      Castle_10: -1736760709017178869
+      Castle_2: 7803579835838553921
+      Castle_3: -1682882690250861636
+      Castle_4: -77001387259621195
+      Castle_5: -5260175630729947354
+      Castle_6: -6935640475148911074
+      Castle_7: 4606979011566258888
+      Castle_8: 2996507498748529137
+      Castle_9: -5426138607464267151
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
