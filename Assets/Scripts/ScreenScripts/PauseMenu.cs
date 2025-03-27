@@ -43,30 +43,32 @@ public class PauseMenu : MonoBehaviour
 
         if (IsPaused && !IsOptions) {
 
-            if (Input.GetKeyDown(KeyCode.T)) {
+            if (Input.GetKeyDown(KeyCode.C)) {
+                pauseMenu.SetActive(false);
+                IsPaused = false;
+                IsOptions = false;
+                Time.timeScale = 1;
+                resumeM = 0.2f;
+            }
+
+            if (Input.GetKeyDown(KeyCode.R)) {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
                 IsPaused = false; 
                 Time.timeScale = 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.S)) {
+            if (Input.GetKeyDown(KeyCode.O)) {
                 optionsMenu.SetActive(true);
                 IsOptions = true; 
                 Time.timeScale = 1; 
             }
 
-            if (Input.GetKeyDown(KeyCode.N)) {
+            if (Input.GetKeyDown(KeyCode.Q)) {
                 SceneManager.LoadScene("MainMenu");
                 Time.timeScale = 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.R)) {
-                pauseMenu.SetActive(false);
-                IsPaused = false;
-                IsOptions = false; 
-                Time.timeScale = 1;
-                resumeM = 0.2f; 
-            }
+            
 
         }
         

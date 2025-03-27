@@ -1,23 +1,34 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
+
+    [SerializeField] GameObject optionsMenu;
+
     void Update() {
         if (Input.GetKeyDown(KeyCode.S)) {
-            SceneManager.LoadScene("Level0"); 
+            PauseMenu.ForceUnpause();
+            SceneManager.LoadScene("Level0");
         }
 
         if (Input.GetKeyDown(KeyCode.O)) {
-            SceneManager.LoadScene("Options"); 
+            optionsMenu.SetActive(true);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (optionsMenu.activeSelf) {
+                optionsMenu.SetActive(false);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Q)) {
             QuitGame();
-        }    
+        }
     }
 
     void QuitGame() {
         Application.Quit();
-        Debug.Log("Game has quit."); 
+        Debug.Log("Game has quit.");
     }
 }
