@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level Selection Map.unity
     guid: e6650a2f6d7f25d49982d14267eb9f5e
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 60d00bf173994ec439760657c66945d1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

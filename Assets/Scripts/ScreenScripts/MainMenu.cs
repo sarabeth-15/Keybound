@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour {
 
     [SerializeField] GameObject optionsMenu;
+    [SerializeField] OptionsCanvasSync optionsCanvasSync; 
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.S)) {
@@ -13,7 +14,7 @@ public class MainMenu : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.O)) {
             optionsMenu.SetActive(true);
-
+            optionsCanvasSync.UpdateOverlayUI();
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {

@@ -6,6 +6,8 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject optionsMenu;
+    [SerializeField] OptionsCanvasSync optionsCanvasSync;
+
     public static bool IsPaused { get; private set; }
     public static bool IsOptions { get; private set; }
 
@@ -59,6 +61,7 @@ public class PauseMenu : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.O)) {
                 optionsMenu.SetActive(true);
+                optionsCanvasSync.UpdateOverlayUI();
                 IsOptions = true; 
                 Time.timeScale = 1; 
             }

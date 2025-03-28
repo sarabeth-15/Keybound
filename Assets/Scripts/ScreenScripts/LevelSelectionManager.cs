@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -17,11 +17,6 @@ public class LevelSelectionManager : MonoBehaviour {
     private bool isWaitingToJump = false;
     private float jumpDelay = 0.5f;
     private float jumpTimer = 0f;
-
-    // ?? Add delay to show the locked text first before switching
-    private bool showDelayedUnlock = false;
-    private float unlockDelay = 0.3f;
-    private float unlockTimer = 0f;
 
     void Start() {
         maxUnlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
@@ -49,22 +44,8 @@ public class LevelSelectionManager : MonoBehaviour {
             if (jumpTimer <= 0f) {
                 pointer.transform.position = levelPositions[currentLevel - 1].position;
                 isWaitingToJump = false;
-
-                // Step 1: Show locked UI first
-                ShowLockedUI();
-
-                // Step 2: Then wait and show true unlock state
-                showDelayedUnlock = true;
-                unlockTimer = unlockDelay;
-
+                UpdateUI();
                 PlayerPrefs.DeleteKey("PointerTargetLevel");
-            }
-        }
-        else if (showDelayedUnlock) {
-            unlockTimer -= Time.deltaTime;
-            if (unlockTimer <= 0f) {
-                showDelayedUnlock = false;
-                UpdateUI(); // Now show the true unlocked UI
             }
         }
         else {
@@ -99,12 +80,6 @@ public class LevelSelectionManager : MonoBehaviour {
             enterButtonImage.gameObject.SetActive(false);
             lockedButtonText.gameObject.SetActive(true);
         }
-    }
-
-    void ShowLockedUI() {
-        enterButtonText.gameObject.SetActive(false);
-        enterButtonImage.gameObject.SetActive(false);
-        lockedButtonText.gameObject.SetActive(true);
     }
 
     public void LoadLevel() {

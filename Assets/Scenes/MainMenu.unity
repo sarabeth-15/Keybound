@@ -1026,6 +1026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionsMenu: {fileID: 657155865}
+  letterOverlayText: {fileID: 909038942}
 --- !u!1 &692485225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,6 +1734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionsMenu: {fileID: 657155865}
+  optionsCanvasSync: {fileID: 0}
 --- !u!1 &1089599843
 GameObject:
   m_ObjectHideFlags: 0
