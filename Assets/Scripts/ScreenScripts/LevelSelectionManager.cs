@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -6,20 +7,69 @@ public class LevelSelectionManager : MonoBehaviour {
     public int currentLevel = 1;
     public int maxUnlockedLevel = 1;
 
-    public Button enterButtoText;
-    public Text enterButtonImage;
+    public TMP_Text enterButtonText;
+    public TMP_Text lockedButtonText;
+    public Image enterButtonImage;
 
     public GameObject pointer;
-
-    // Positions for the pointer corresponding to each level
     public Transform[] levelPositions;
 
+    private bool isWaitingToJump = false;
+    private float jumpDelay = 0.5f;
+    private float jumpTimer = 0f;
+
+    // ?? Add delay to show the locked text first before switching
+    private bool showDelayedUnlock = false;
+    private float unlockDelay = 0.3f;
+    private float unlockTimer = 0f;
+
     void Start() {
-        UpdateUI();
+        maxUnlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+
+        int savedTargetLevel = PlayerPrefs.GetInt("PointerTargetLevel", 1);
+        if (savedTargetLevel > 1) {
+            currentLevel = 1;
+            pointer.transform.position = levelPositions[0].position;
+
+            currentLevel = savedTargetLevel;
+            isWaitingToJump = true;
+            jumpTimer = jumpDelay;
+        }
+        else {
+            currentLevel = maxUnlockedLevel;
+            pointer.transform.position = levelPositions[currentLevel - 1].position;
+            UpdateUI();
+        }
     }
 
     void Update() {
-        HandleInput();
+        if (isWaitingToJump) {
+            jumpTimer -= Time.deltaTime;
+
+            if (jumpTimer <= 0f) {
+                pointer.transform.position = levelPositions[currentLevel - 1].position;
+                isWaitingToJump = false;
+
+                // Step 1: Show locked UI first
+                ShowLockedUI();
+
+                // Step 2: Then wait and show true unlock state
+                showDelayedUnlock = true;
+                unlockTimer = unlockDelay;
+
+                PlayerPrefs.DeleteKey("PointerTargetLevel");
+            }
+        }
+        else if (showDelayedUnlock) {
+            unlockTimer -= Time.deltaTime;
+            if (unlockTimer <= 0f) {
+                showDelayedUnlock = false;
+                UpdateUI(); // Now show the true unlocked UI
+            }
+        }
+        else {
+            HandleInput();
+        }
     }
 
     void HandleInput() {
@@ -34,25 +84,30 @@ public class LevelSelectionManager : MonoBehaviour {
 
     void SelectLevel(int level) {
         currentLevel = level;
+        pointer.transform.position = levelPositions[currentLevel - 1].position;
         UpdateUI();
     }
 
     void UpdateUI() {
-        // Move pointer to the correct position
-        pointer.transform.position = levelPositions[currentLevel - 1].position;
-
         if (currentLevel <= maxUnlockedLevel) {
-            enterButtonText.text = "NTER";
-            enterButtonImage.gameObject.SetActive(true); 
+            enterButtonText.gameObject.SetActive(true);
+            enterButtonImage.gameObject.SetActive(true);
+            lockedButtonText.gameObject.SetActive(false);
         }
         else {
-            enterButtonText.text = "LOCKED";
-            enterButtonImage.gameObject.SetActive(false);   
+            enterButtonText.gameObject.SetActive(false);
+            enterButtonImage.gameObject.SetActive(false);
+            lockedButtonText.gameObject.SetActive(true);
         }
+    }
+
+    void ShowLockedUI() {
+        enterButtonText.gameObject.SetActive(false);
+        enterButtonImage.gameObject.SetActive(false);
+        lockedButtonText.gameObject.SetActive(true);
     }
 
     public void LoadLevel() {
         SceneManager.LoadScene("Level" + currentLevel);
     }
 }
-

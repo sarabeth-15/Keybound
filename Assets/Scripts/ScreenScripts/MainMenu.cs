@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.S)) {
             PauseMenu.ForceUnpause();
-            SceneManager.LoadScene("Level0");
+            SceneManager.LoadScene("Level Selection Map");
         }
 
         if (Input.GetKeyDown(KeyCode.O)) {

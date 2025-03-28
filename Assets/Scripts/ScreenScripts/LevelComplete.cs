@@ -10,6 +10,16 @@ public class LevelComplete : MonoBehaviour {
         DisplayTime();
     }
 
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.R)) {
+            SceneManager.LoadScene("Level1"); // Restart current level
+        }
+
+        if (Input.GetKeyDown(KeyCode.N)) {
+            GoToLevelSelection();
+        }
+    }
+
     void DisplayTime() {
         // Get the final time stored in LevelResult
         float time = LevelResult.finalTime;
@@ -20,5 +30,18 @@ public class LevelComplete : MonoBehaviour {
 
         // Format and display the time in the UI
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void GoToLevelSelection() {
+       
+        int nextLevel = 2;
+        int previousUnlocked = PlayerPrefs.GetInt("UnlockedLevel", 1);
+
+        if (nextLevel > previousUnlocked) {
+            PlayerPrefs.SetInt("UnlockedLevel", nextLevel);
+        }
+
+        PlayerPrefs.SetInt("PointerTargetLevel", nextLevel);
+        SceneManager.LoadScene("Level Selection Map");
     }
 }
