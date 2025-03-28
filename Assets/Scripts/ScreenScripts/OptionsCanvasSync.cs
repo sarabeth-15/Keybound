@@ -15,7 +15,6 @@ public class OptionsCanvasSync : MonoBehaviour {
                 bool current = SettingsManager.Instance.letterOverlaysEnabled;
                 SettingsManager.Instance.SetLetterOverlaysEnabled(!current);
 
-                Debug.Log("Letter overlays toggled: " + !current);
                 UpdateOverlayUI();
             }
         }
@@ -29,6 +28,6 @@ public class OptionsCanvasSync : MonoBehaviour {
         if (letterOverlayText == null) return;
 
         bool isEnabled = SettingsManager.Instance.letterOverlaysEnabled;
-        letterOverlayText.text = isEnabled ? "N" : "FF";
+        letterOverlayText.text = isEnabled ? "FF" : "N";
     }
 }

@@ -1279,7 +1279,7 @@ GameObject:
   - component: {fileID: 909038943}
   - component: {fileID: 909038942}
   m_Layer: 5
-  m_Name: FF
+  m_Name: N/FF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3127,7 +3127,7 @@ GameObject:
   - component: {fileID: 1664566448}
   - component: {fileID: 1664566447}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Brick BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
