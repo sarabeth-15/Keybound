@@ -324,7 +324,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &22553620
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -516,7 +515,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &41260127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -741,7 +739,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &74942912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -946,9 +943,11 @@ GameObject:
   - component: {fileID: 107292596}
   - component: {fileID: 107292598}
   - component: {fileID: 107292597}
+  - component: {fileID: 107292600}
+  - component: {fileID: 107292599}
   m_Layer: 6
   m_Name: Guard
-  m_TagString: Untagged
+  m_TagString: Guard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -961,13 +960,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107292595}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.009380363, w: 0.9999561}
+  m_LocalRotation: {x: -0, y: -0, z: 0.046679374, w: 0.99890995}
   m_LocalPosition: {x: 1.5437893, y: -1.001006, z: 0}
   m_LocalScale: {x: 1.7268997, y: 4.9575996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2102423770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.351}
 --- !u!114 &107292597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,6 +980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  window: 0
 --- !u!212 &107292598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1036,6 +1036,79 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!61 &107292599
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107292595}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.06831278, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.65843606, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &107292600
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107292595}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &113728683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,7 +1180,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &113728687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1466,7 +1538,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &157435548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1658,7 +1729,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &159830076
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1850,7 +1920,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &172923408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2075,7 +2144,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &196205707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2267,7 +2335,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &203849787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2459,7 +2526,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &215922375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2651,7 +2717,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &225717163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2843,7 +2908,6 @@ MonoBehaviour:
   brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &241876504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2942,7 +3006,7 @@ SpriteRenderer:
   m_Size: {x: 4.36, y: 2.89}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!251 &241876506
@@ -3118,7 +3182,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!114 &280363117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3236,7 +3299,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &281570625
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3493,7 +3555,7 @@ SpriteRenderer:
   m_Size: {x: 4.18, y: 2.13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &298990995
@@ -3567,7 +3629,6 @@ MonoBehaviour:
   brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &298990999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3666,7 +3727,7 @@ SpriteRenderer:
   m_Size: {x: 4.36, y: 2.89}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!251 &298991001
@@ -3847,7 +3908,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &309037129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4106,7 +4166,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &319379745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4348,7 +4407,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &329244589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4522,7 +4580,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &377147790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4760,7 +4817,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &379774155
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4978,8 +5034,10 @@ GameObject:
   m_Component:
   - component: {fileID: 403320044}
   - component: {fileID: 403320045}
+  - component: {fileID: 403320047}
+  - component: {fileID: 403320046}
   m_Layer: 0
-  m_Name: Untitled349_20250317232553_0
+  m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4997,7 +5055,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1278008792}
   m_Father: {fileID: 2102423770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &403320045
@@ -5055,6 +5114,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &403320046
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403320043}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.68, y: 5.18}
+    newSize: {x: 3.68, y: 5.18}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.68, y: 5.18}
+  m_EdgeRadius: 0
+--- !u!114 &403320047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403320043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a18bd25fc0ac4079beb28f8bf02df76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &448286670
 GameObject:
   m_ObjectHideFlags: 0
@@ -5126,7 +5243,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &448286674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5341,7 +5457,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &458292101
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5619,7 +5734,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &470721978
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5811,7 +5925,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &471811029
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6448,7 +6561,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &564559156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6667,7 +6779,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &569287903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6860,7 +6971,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &594914693
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7079,7 +7189,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &598835497
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7252,7 +7361,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &608263540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7463,7 +7571,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &620934691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7808,7 +7915,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &656755706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7981,7 +8087,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &663633023
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8326,7 +8431,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &679096350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8500,7 +8604,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &690013900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8739,7 +8842,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &692848196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8940,7 +9042,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &701370532
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9250,7 +9351,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &721806104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9424,7 +9524,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &728243263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9644,7 +9743,6 @@ MonoBehaviour:
   brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &759472134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9743,7 +9841,7 @@ SpriteRenderer:
   m_Size: {x: 4.36, y: 2.89}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &759472136
@@ -9882,7 +9980,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &766480620
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10056,7 +10153,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &827638083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10294,7 +10390,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &830015509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10486,7 +10581,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &839415138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10678,7 +10772,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &847360141
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10852,7 +10945,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &847793863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11173,7 +11265,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!114 &848250244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11311,7 +11402,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &860186404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11530,7 +11620,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &863625236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11741,9 +11830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousRoom: {fileID: 1034410386}
-  nextRoom: {fileID: 78669932}
   cam: {fileID: 519420033}
-  player: {fileID: 2139178885}
 --- !u!1 &878180149
 GameObject:
   m_ObjectHideFlags: 0
@@ -11848,7 +11935,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &901007345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12296,7 +12382,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!114 &967835337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12433,7 +12518,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &979551763
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12625,7 +12709,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &984818083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12818,7 +12901,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &991015336
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13037,7 +13119,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1010358317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13158,6 +13239,155 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!1 &1015399680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015399684}
+  - component: {fileID: 1015399685}
+  - component: {fileID: 1015399682}
+  - component: {fileID: 1015399681}
+  m_Layer: 0
+  m_Name: Trigger Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1015399681
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015399680}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &1015399682
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015399680}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -2
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1015399684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015399680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.9041, y: 3.7781, z: 0}
+  m_LocalScale: {x: 3.8319, y: 5.12992, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1015399685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015399680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6b9f990eb014749927c51a56bd6756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guardSpot: 0
+  triggerZone: 0
 --- !u!1 &1015533828
 GameObject:
   m_ObjectHideFlags: 0
@@ -13227,7 +13457,7 @@ SpriteRenderer:
   m_Size: {x: 4.18, y: 2.13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1015533830
@@ -13316,7 +13546,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1018412365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13508,7 +13737,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1019833812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13700,7 +13928,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1024856826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13892,7 +14119,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1030112977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14118,7 +14344,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1103151934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14292,7 +14517,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1115364587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14570,7 +14794,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1129782258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14743,7 +14966,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1145832286
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14954,7 +15176,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1150309593
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15146,7 +15367,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1162257430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15338,7 +15558,6 @@ MonoBehaviour:
   brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1163435642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15437,7 +15656,7 @@ SpriteRenderer:
   m_Size: {x: 4.36, y: 2.89}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!251 &1163435644
@@ -15512,7 +15731,6 @@ MonoBehaviour:
   brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1166603676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15611,7 +15829,7 @@ SpriteRenderer:
   m_Size: {x: 4.36, y: 2.89}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1166603678
@@ -15731,7 +15949,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1169308739
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15942,7 +16159,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1173740958
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16217,7 +16433,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!114 &1179990598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16354,7 +16569,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1206585453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16778,7 +16992,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1239061305
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17174,7 +17387,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!251 &1253566500
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -17252,9 +17464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousRoom: {fileID: 710879331}
-  nextRoom: {fileID: 1034410386}
   cam: {fileID: 519420033}
-  player: {fileID: 2139178885}
 --- !u!4 &1267714561
 Transform:
   m_ObjectHideFlags: 0
@@ -17385,7 +17595,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1268025716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17566,12 +17775,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278008791}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2102423770}
+  m_Father: {fileID: 403320044}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!331 &1278008793
 SpriteMask:
@@ -17814,7 +18023,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1286545215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18046,7 +18254,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1293112423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18276,7 +18483,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1299275111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18468,7 +18674,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1299980113
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18697,7 +18902,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1320616613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18889,7 +19093,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1321134999
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19081,7 +19284,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -321503723016466884, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1333126413
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19273,7 +19475,6 @@ MonoBehaviour:
   brickON: {fileID: -5337622181310035122, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   brickOFF: {fileID: -6183373998783906815, guid: 7bf89fc58f659f6489125e9bd6415cd8, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1341597195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19372,7 +19573,7 @@ SpriteRenderer:
   m_Size: {x: 4.36, y: 2.89}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!251 &1341597197
@@ -19465,7 +19666,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1362604864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19657,7 +19857,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1379437843
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19983,7 +20182,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1385650557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20376,7 +20574,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1437768162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20741,7 +20938,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1487448127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20933,7 +21129,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1488299195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21484,7 +21679,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1493313146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21676,7 +21870,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1514681805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22016,7 +22209,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1520791688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22208,7 +22400,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1521838901
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22401,7 +22592,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1524316983
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22672,9 +22862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousRoom: {fileID: 78669932}
-  nextRoom: {fileID: 1740185850}
   cam: {fileID: 519420033}
-  player: {fileID: 2139178885}
 --- !u!1 &1540865846
 GameObject:
   m_ObjectHideFlags: 0
@@ -22900,7 +23088,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1551141617
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23092,7 +23279,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1552223069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23284,7 +23470,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1555794947
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23559,7 +23744,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!114 &1567091621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23696,7 +23880,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1567625851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23888,7 +24071,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1590057126
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24301,7 +24483,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1634610757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24493,7 +24674,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1635578486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24685,7 +24865,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1638523852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24877,7 +25056,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1653804649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25069,7 +25247,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1655924033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25261,7 +25438,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1662409264
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25503,7 +25679,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1680576161
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25695,7 +25870,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1682466104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25928,7 +26102,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1709547534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26155,7 +26328,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1745151302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26356,7 +26528,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1760053848
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26594,7 +26765,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1797608271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26786,7 +26956,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1800862383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26960,7 +27129,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1809737302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27198,7 +27366,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1516129758}
-  falling: 0
 --- !u!61 &1810843627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27391,7 +27558,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1821667932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27591,7 +27757,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1840777745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27802,7 +27967,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1867495375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28382,7 +28546,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &1952568602
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28657,7 +28820,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!114 &1955648569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28795,7 +28957,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &1991285054
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29101,7 +29262,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &1994562858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29293,7 +29453,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &2005927430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29520,7 +29679,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1402731633}
-  falling: 0
 --- !u!61 &2035570890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29694,7 +29852,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!61 &2047545052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29932,7 +30089,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &2051240186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30211,7 +30367,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -5101684710495372326, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 488550492}
-  falling: 0
 --- !u!61 &2101953967
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30343,7 +30498,7 @@ GameObject:
   - component: {fileID: 2102423770}
   - component: {fileID: 2102423769}
   m_Layer: 0
-  m_Name: Untitled349_20250317230911_0
+  m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30419,7 +30574,6 @@ Transform:
   m_Children:
   - {fileID: 107292596}
   - {fileID: 403320044}
-  - {fileID: 1278008792}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.527}
 --- !u!1 &2113012022
@@ -30576,7 +30730,6 @@ MonoBehaviour:
   brickON: {fileID: -1027308088304055928, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   brickOFF: {fileID: -7066822255444251750, guid: 2a4aa2e6db1c306458701a91f9dca452, type: 3}
   room: {fileID: 1489171370}
-  falling: 0
 --- !u!114 &2113012027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30853,3 +31006,4 @@ SceneRoots:
   - {fileID: 1490681899}
   - {fileID: 179521945}
   - {fileID: 2102423770}
+  - {fileID: 1015399684}

@@ -4,14 +4,14 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float jumpPower = 10f;
     [SerializeField] private LayerMask groundLayer;
     private Rigidbody2D body;
-    private BoxCollider2D boxCollider;
+    private CapsuleCollider2D boxCollider;
     private float horizontalInput;
     private Animator anim;
 
     private void Awake() {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        boxCollider = GetComponent<BoxCollider2D>();
+        boxCollider = GetComponent<CapsuleCollider2D>();
     }
 
     private void Update() {

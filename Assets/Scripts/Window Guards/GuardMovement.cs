@@ -15,6 +15,7 @@ public class GuardMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("Guard Position: " + transform.position.x + " | Moving: " + (switc ? "Right" : "Left"));
         if(switc){
             moveRight();
         }
@@ -25,7 +26,7 @@ public class GuardMovement : MonoBehaviour
             switc = false;
             spriteRenderer.flipX = true;
         }
-        if(transform.position.x <= -15f){
+        if(transform.position.x <= -13f){
             switc = true;
             spriteRenderer.flipX = false;
         }
