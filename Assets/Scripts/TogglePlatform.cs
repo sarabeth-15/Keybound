@@ -21,16 +21,18 @@ public class TogglePlatform : MonoBehaviour
         // Brick starts with disabled sprite, collider, and gravity
         platformCollider.enabled = false;
         originalScale = transform.localScale;
-        rb.isKinematic = true; 
-        rb.linearVelocity = Vector2.zero;        
+        if (rb != null) {
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            rb.linearVelocity = Vector2.zero;
+        }
         spriteRenderer.sprite = brickOFF;
     }
-    private void Update()
-    {
+    private void Update() {
+        if (PauseMenu.IsKeyBlocked(toggleKey)) return;
+
         // By default, disables any bricks that are off-screen, in a different room, or not assigned a key
         if (toggleKey == KeyCode.None || !spriteRenderer.isVisible) return;
-        if (!room.playerInRoom) 
-        {
+        if (!room.playerInRoom) {
             platformCollider.enabled = false;
             spriteRenderer.sprite = brickOFF;
             transform.localScale = originalScale;
@@ -41,32 +43,29 @@ public class TogglePlatform : MonoBehaviour
         bool isKeyHeld = Input.GetKey(toggleKey);
 
         // Checks type of brick, reacts accordingly
-        if (falling) fallingBrick(isKeyHeld); 
+        if (falling) fallingBrick(isKeyHeld);
         else {
             platformCollider.enabled = isKeyHeld;
             spriteRenderer.sprite = isKeyHeld ? brickON : brickOFF;
             transform.localScale = isKeyHeld ? originalScale * 1.1f : originalScale;
         }
     }
-    private void fallingBrick(bool isKeyHeld)
-    {
+    private void fallingBrick(bool isKeyHeld) {
         // If key pressed, platform is turned on but doesn't fall
-        if (!used && isKeyHeld)
-        {
+        if (!used && isKeyHeld) {
             used = true;
             platformCollider.enabled = true;
             spriteRenderer.sprite = brickON;
             transform.localScale = originalScale * 1.1f;
         }
         // When key is released, brick falls
-        else if (used && !isKeyHeld)
-        {
-            rb.isKinematic = false;
-            rb.gravityScale = 5;                            
+        else if (used && !isKeyHeld && rb != null) {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            rb.gravityScale = 5;
             rb.mass = 300;                          //CHANGE MASS OF FALLING BRICK HERE
             spriteRenderer.sprite = brickOFF;
             transform.localScale = originalScale;
-            spriteRenderer.sortingOrder += 1; 
+            spriteRenderer.sortingOrder += 1;
         }
     }
 }

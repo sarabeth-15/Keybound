@@ -1,10 +1,13 @@
+using System.Collections; 
 using UnityEngine;
 
 public class LetterOverlay : MonoBehaviour
 {
     private SpriteRenderer letterRenderer;
+    private GameObject letterObject;
     private TogglePlatform togglePlatform;
     private RoomCheck room;
+
     [SerializeField] private Sprite letterSprite;
     [SerializeField] private Color32 colorOFF; 
     [SerializeField] private Color32 colorON; 
@@ -21,7 +24,7 @@ public class LetterOverlay : MonoBehaviour
         room = togglePlatform.room;
 
         // Create a new object for the letter overlay
-        GameObject letterObject = new GameObject("LetterOverlay");
+        letterObject = new GameObject("LetterOverlay");
         letterObject.transform.SetParent(transform);
         letterObject.transform.localPosition = Vector3.zero; // Align with the platform
 
@@ -35,13 +38,22 @@ public class LetterOverlay : MonoBehaviour
 
         // Set initial color to Yellow
         letterRenderer.color = colorOFF;
+
+        // Apply initial visibility
+        StartCoroutine(InitializeOverlayVisibility());
     }
 
-    private void Update()
-    {
-        bool isKeyHeld = false;
-        
+    private void Update() {
+
         if (togglePlatform == null || room == null || letterRenderer == null) return;
+
+        if (SettingsManager.Instance != null && letterObject != null) {
+            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
+        }
+
+        if (PauseMenu.IsKeyBlocked(togglePlatform.toggleKey)) return;
+
+        bool isKeyHeld = false;
 
         if (room.playerInRoom) // Only run if player is in the room
         {
@@ -51,6 +63,22 @@ public class LetterOverlay : MonoBehaviour
         }
         else {
             letterRenderer.color = colorOFF;
+        }
+    }
+
+    public static void SyncAllOverlays(bool enabled) {
+        var overlays = Object.FindObjectsByType<LetterOverlay>(FindObjectsSortMode.None);
+        foreach (var overlay in overlays) {
+            if (overlay.letterObject != null) {
+                overlay.letterObject.SetActive(enabled);
+            }
+        }
+    }
+
+    private IEnumerator InitializeOverlayVisibility() {
+        yield return null; // wait one frame
+        if (SettingsManager.Instance != null && letterObject != null) {
+            letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
         }
     }
 }
