@@ -11,8 +11,6 @@ public class LevelSelectionManager : MonoBehaviour {
     public TMP_Text lockedButtonText;
     public Image enterButtonImage;
 
-    [SerializeField] private TMP_Text levelNameText;
-
     public GameObject pointer;
     public Transform[] levelPositions;
 
@@ -20,25 +18,40 @@ public class LevelSelectionManager : MonoBehaviour {
     private float jumpDelay = 0.5f;
     private float jumpTimer = 0f;
 
+    private int lastCompletedLevel = -1;
+
     [SerializeField] private GameObject bannerLayoutLevel1;
     [SerializeField] private GameObject bannerLayoutStandard;
 
     [SerializeField] private TMP_Text levelNameText_Level1;
     [SerializeField] private TMP_Text levelNameText_Standard;
 
-    [SerializeField] private Image level1CenterKeyImage;     // From BannerLayout_Level1/Key2
-    [SerializeField] private Image leftKeyImage;             // From BannerLayout_Standard/Key1
-    [SerializeField] private Image centerKeyImage;           // From BannerLayout_Standard/Key2
-    [SerializeField] private Image rightKeyImage;
+    [SerializeField] private Image level1CenterKeyImage; // BannerLayout_Level1/Key2
+    [SerializeField] private Image leftKeyImage;         // BannerLayout_Standard/Key1
+    [SerializeField] private Image centerKeyImage;       // BannerLayout_Standard/Key2
+    [SerializeField] private Image rightKeyImage;        // BannerLayout_Standard/Key3
 
     [SerializeField] private Sprite keyOn;
     [SerializeField] private Sprite keyOff;
 
     void Start() {
+        // Only reset data if flagged for a new game
+        bool isNewGame = PlayerPrefs.GetInt("NewGame", 0) == 1;
+        if (isNewGame) {
+            for (int i = 1; i <= 4; i++) {
+                PlayerPrefs.DeleteKey("KeysCollected_Level" + i);
+            }
+            PlayerPrefs.DeleteKey("LastCompletedLevel");
+            PlayerPrefs.DeleteKey("UnlockedLevel");
+            PlayerPrefs.SetInt("NewGame", 0); // clear the flag
+        }
+
         maxUnlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
 
+        lastCompletedLevel = PlayerPrefs.GetInt("LastCompletedLevel", -1);
+
         bool startFromMainMenu = PlayerPrefs.GetInt("StartFromMainMenu", 0) == 1;
-        PlayerPrefs.DeleteKey("StartFromMainMenu"); // clear it after use
+        PlayerPrefs.DeleteKey("StartFromMainMenu");
 
         int savedTargetLevel = PlayerPrefs.GetInt("PointerTargetLevel", 1);
 
@@ -47,7 +60,7 @@ public class LevelSelectionManager : MonoBehaviour {
             pointer.transform.position = levelPositions[0].position;
             UpdateUI();
             UpdateLevelName();
-            UpdateKeyDisplay(); 
+            UpdateKeyDisplay(currentLevel);
             return;
         }
 
@@ -58,13 +71,17 @@ public class LevelSelectionManager : MonoBehaviour {
             currentLevel = savedTargetLevel;
             isWaitingToJump = true;
             jumpTimer = jumpDelay;
+
+            if (lastCompletedLevel != -1) {
+                UpdateKeyDisplay(lastCompletedLevel); // Show keys from last completed level during jump
+            }
         }
         else {
             currentLevel = maxUnlockedLevel;
             pointer.transform.position = levelPositions[currentLevel - 1].position;
             UpdateUI();
             UpdateLevelName();
-            UpdateKeyDisplay(); 
+            UpdateKeyDisplay(currentLevel);
         }
     }
 
@@ -77,7 +94,7 @@ public class LevelSelectionManager : MonoBehaviour {
                 isWaitingToJump = false;
                 UpdateUI();
                 UpdateLevelName();
-                UpdateKeyDisplay(); 
+                UpdateKeyDisplay(currentLevel);
                 PlayerPrefs.DeleteKey("PointerTargetLevel");
             }
         }
@@ -102,7 +119,7 @@ public class LevelSelectionManager : MonoBehaviour {
 
         UpdateUI();
         UpdateLevelName();
-        UpdateKeyDisplay();
+        UpdateKeyDisplay(currentLevel); // Show keys for selected level
     }
 
     void UpdateUI() {
@@ -131,10 +148,11 @@ public class LevelSelectionManager : MonoBehaviour {
         levelNameText_Standard.text = name;
     }
 
-    void UpdateKeyDisplay() {
-        string levelName = "Level" + currentLevel;
+    void UpdateKeyDisplay(int levelToDisplay) {
+        string levelName = "Level" + levelToDisplay;
         int keysCollected = PlayerPrefs.GetInt("KeysCollected_" + levelName, 0);
-        bool isLevel1 = currentLevel == 1;
+
+        bool isLevel1 = levelToDisplay == 1;
 
         bannerLayoutLevel1.SetActive(isLevel1);
         bannerLayoutStandard.SetActive(!isLevel1);
@@ -152,5 +170,4 @@ public class LevelSelectionManager : MonoBehaviour {
     public void LoadLevel() {
         SceneManager.LoadScene("Level" + currentLevel);
     }
-
 }

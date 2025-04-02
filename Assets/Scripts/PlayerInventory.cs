@@ -1,26 +1,28 @@
 using UnityEngine;
 
-public class PlayerInventory : MonoBehaviour
-{
-    // Singleton instance to access from other scripts
+public class PlayerInventory : MonoBehaviour {
     public static PlayerInventory instance;
 
-    // Variable to check if the player has collected the key
+    // Number of keys collected in the current level
     public int keysCollected = 0;
 
-
-    private void Awake()
-    {
-        // Ensure only one instance of PlayerInventory exists
-        if (instance == null)
+    private void Awake() {
+        if (instance == null) {
             instance = this;
-        else
+        }
+        else {
             Destroy(gameObject);
+        }
     }
 
-    public void CollectKey()
-    {
-        keysCollected += 1; // Set key status to collected
-        Debug.Log("Key collected! Total: " + keysCollected); // Output message for testing
+    private void Start() {
+        // Reset key count at start of each level
+        keysCollected = 0;
+    }
+
+    public void CollectKey() {
+        keysCollected++;
+        Debug.Log("Key collected! Total now: " + keysCollected);
     }
 }
+

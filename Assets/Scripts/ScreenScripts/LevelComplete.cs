@@ -36,29 +36,19 @@ public class LevelComplete : MonoBehaviour {
 
     void DisplayLevelName() {
         string sceneName = LevelTracker.PreviousSceneName;
-
-        string displayName;
+        string levelDisplay = ""; 
 
         switch (sceneName) {
-            case "Level1":
-                displayName = "LEVEL 1";
-                break;
-            case "Level2":
-                displayName = "LEVEL 2";
-                break;
-            case "Level3":
-                displayName = "LEVEL 3";
-                break;
-            case "Level4":
-                displayName = "LEVEL 4";
-                break;
-            default:
-                displayName = sceneName.ToUpper(); // fallback if unmapped
-                break;
+            case "Level1": levelDisplay = "LEVEL 1"; break;
+            case "Level2": levelDisplay = "LEVEL 2"; break;
+            case "Level3": levelDisplay = "LEVEL 3"; break;
+            case "Level4": levelDisplay = "LEVEL 4"; break;
+            default: levelDisplay = "LEVEL"; break;
         }
 
-        levelNameText.text = displayName;
+        levelNameText.text = levelDisplay;
     }
+
 
     public void GoToLevelSelection() {
 
