@@ -4792,8 +4792,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2086430575}
-  optionsMenu: {fileID: 0}
-  optionsCanvasSync: {fileID: 0}
+  optionsMenu: {fileID: 1860346399}
+  optionsCanvasSync: {fileID: 1860346401}
 --- !u!114 &655077778
 MonoBehaviour:
   m_ObjectHideFlags: 0

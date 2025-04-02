@@ -28,7 +28,10 @@ public class TogglePlatform : MonoBehaviour
         spriteRenderer.sprite = brickOFF;
     }
     private void Update() {
-        if (PauseMenu.IsKeyBlocked(toggleKey)) return;
+
+        if (PauseMenu.JustResumed) return;
+
+        if (PauseMenu.IsKeyBlocked(toggleKey) || (toggleKey == KeyCode.C && PauseMenu.suppressCThisFrame)) return;
 
         // By default, disables any bricks that are off-screen, in a different room, or not assigned a key
         if (toggleKey == KeyCode.None || (!spriteRenderer.isVisible && rb.bodyType != RigidbodyType2D.Dynamic)) return;
