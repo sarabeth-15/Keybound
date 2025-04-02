@@ -5,7 +5,19 @@ public class InputSuppressor : MonoBehaviour {
     private static bool suppressNextFrame = false;
     public static float suppressTimer = 0f;
 
-    
+    private static InputSuppressor instance;
+
+    private void Awake() {
+        if (instance != null && instance != this) {
+            Destroy(gameObject); // Prevent duplicates
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject); // Persist across scenes
+    }
+
+
     public static void SuppressForOneFrame() {
         suppressNextFrame = true;
         SuppressInput = true;
