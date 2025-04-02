@@ -7,11 +7,13 @@ public class TogglePlatform : MonoBehaviour
     private Vector3 originalScale;
     private Rigidbody2D rb;
     private bool used = false;
+
     [SerializeField] public KeyCode toggleKey;
     [SerializeField] private Sprite brickON;
     [SerializeField] private Sprite brickOFF;
     [SerializeField] public RoomCheck room;
     [SerializeField] public bool falling; 
+
     private void Start()
     {
         platformCollider = GetComponent<Collider2D>();
@@ -29,9 +31,8 @@ public class TogglePlatform : MonoBehaviour
     }
     private void Update() {
 
-        if (PauseMenu.JustResumed) return;
-
-        if (PauseMenu.IsKeyBlocked(toggleKey) || (toggleKey == KeyCode.C && PauseMenu.suppressCThisFrame)) return;
+        if (InputSuppressor.SuppressInput) return;
+        if (PauseMenu.IsKeyBlocked(toggleKey)) return;
 
         // By default, disables any bricks that are off-screen, in a different room, or not assigned a key
         if (toggleKey == KeyCode.None || (!spriteRenderer.isVisible && rb.bodyType != RigidbodyType2D.Dynamic)) return;

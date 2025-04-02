@@ -14,9 +14,6 @@ public class PauseMenu : MonoBehaviour {
     public static HashSet<KeyCode> blockedKeys = new HashSet<KeyCode>();
     public static float resumeM = 0;
 
-    public static bool suppressCThisFrame = false;
-    public static bool JustResumed = false; 
-
     private void Update() {
         if (resumeM > 0f) {
             resumeM -= Time.unscaledDeltaTime;
@@ -45,16 +42,13 @@ public class PauseMenu : MonoBehaviour {
         }
 
         if (IsPaused && !IsOptions) {
-            if (Input.GetKeyDown(KeyCode.C)) {
-                suppressCThisFrame = true; 
+            if (Input.GetKeyDown(KeyCode.C)) { 
                 pauseMenu.SetActive(false);
                 IsPaused = false;
                 IsOptions = false;
                 Time.timeScale = 1;
-                resumeM = 0.2f;
 
-                suppressCThisFrame = true;
-                JustResumed = true; 
+                InputSuppressor.SuppressForSeconds(0.2f);
             }
 
             if (Input.GetKeyDown(KeyCode.R)) {
@@ -76,18 +70,6 @@ public class PauseMenu : MonoBehaviour {
             }
         }
 
-        suppressCThisFrame = false;
-    }
-
-    private void LateUpdate() {
-        if (JustResumed) {
-            StartCoroutine(ClearJustResumedFlag());
-        }
-    }
-
-    private IEnumerator ClearJustResumedFlag() {
-        yield return null; 
-        JustResumed = false;
     }
 
     public static bool IsKeyBlocked(KeyCode key) {
