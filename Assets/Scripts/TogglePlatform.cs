@@ -31,8 +31,8 @@ public class TogglePlatform : MonoBehaviour
         if (PauseMenu.IsKeyBlocked(toggleKey)) return;
 
         // By default, disables any bricks that are off-screen, in a different room, or not assigned a key
-        if (toggleKey == KeyCode.None || !spriteRenderer.isVisible) return;
-        if (!room.playerInRoom) {
+        if (toggleKey == KeyCode.None || (!spriteRenderer.isVisible && rb.bodyType != RigidbodyType2D.Dynamic)) return;
+        if (!room.playerInRoom && rb.bodyType != RigidbodyType2D.Dynamic) {
             platformCollider.enabled = false;
             spriteRenderer.sprite = brickOFF;
             transform.localScale = originalScale;

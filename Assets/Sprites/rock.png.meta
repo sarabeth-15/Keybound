@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: e6cbadd5287caaf488afa73d9b4d1b9e
+guid: 689095344a6a0cb479cc72b6d8668e4a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3019424127853119141
-    second: line_0
+      213: -2182124076254010665
+    second: rock_0
   - first:
-      213: -2983801191155921686
-    second: line_1
-  - first:
-      213: 2827070441461746612
-    second: line_2
-  - first:
-      213: -2956027928350987577
-    second: line_3
+      213: 2115267796186251350
+    second: rock_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -122,89 +116,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: line_0
+      name: rock_1
       rect:
         serializedVersion: 2
-        x: 307
-        y: 1127
-        width: 125
-        height: 694
+        x: 806
+        y: 1095
+        width: 512
+        height: 296
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b593219d0c9d816d0800000000000000
-      internalID: -3019424127853119141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: line_1
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 563
-        width: 372
-        height: 536
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aec83c020a86796d0800000000000000
-      internalID: -2983801191155921686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: line_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 279
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4bb855a8695cb3720800000000000000
-      internalID: 2827070441461746612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: line_3
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 143
-        width: 456
-        height: 419
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ca6188c2441af6d0800000000000000
-      internalID: -2956027928350987577
+      spriteID: 650418c7ad0fa5d10800000000000000
+      internalID: 2115267796186251350
       vertices: []
       indices: 
       edges: []
@@ -213,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d71c4967dea494b49b998daa07259b5c
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +151,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      line_0: -3019424127853119141
-      line_1: -2983801191155921686
-      line_2: 2827070441461746612
-      line_3: -2956027928350987577
+      rock_0: -2182124076254010665
+      rock_1: 2115267796186251350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -42,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Banished
+    uniqueID: 1747365129
+    locked: 0
   - name: Back
     uniqueID: 647198581
     locked: 0
@@ -50,6 +53,9 @@ TagManager:
     locked: 0
   - name: Front
     uniqueID: 2385959313
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 2053859519
     locked: 0
   m_RenderingLayers:
   - Default
