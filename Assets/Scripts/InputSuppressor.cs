@@ -1,21 +1,20 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class InputSuppressor : MonoBehaviour {
     public static bool SuppressInput { get; private set; } = false;
-    private static bool suppressNextFrame = false;
-    public static float suppressTimer = 0f;
 
     private static InputSuppressor instance;
 
     private void Awake() {
         if (instance != null && instance != this) {
-            Destroy(gameObject); 
+            Destroy(gameObject);
             return;
         }
 
         instance = this;
-        DontDestroyOnLoad(gameObject); 
+        DontDestroyOnLoad(gameObject);
     }
 
     private void OnEnable() {
@@ -27,38 +26,25 @@ public class InputSuppressor : MonoBehaviour {
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-        
         SuppressInput = false;
-        suppressTimer = 0f;
-        suppressNextFrame = false;
-    }
-
-    public static void SuppressForOneFrame() {
-        suppressNextFrame = true;
-        SuppressInput = true;
     }
 
     public static void SuppressForSeconds(float seconds) {
-        suppressTimer = seconds;
+        if (instance != null) {
+            instance.StartCoroutine(instance.ClearAfterDelay(seconds));
+        }
+    }
+
+    private IEnumerator ClearAfterDelay(float seconds) {
         SuppressInput = true;
+        yield return new WaitForSecondsRealtime(seconds);
+        SuppressInput = false;
     }
 
-    private void Update() {
-        if (suppressTimer > 0f) {
-            suppressTimer -= Time.unscaledDeltaTime;
-            if (suppressTimer <= 0f) {
-                suppressTimer = 0f;
-                SuppressInput = false;
-            }
-        }
-    }
-
-    private void LateUpdate() {
-        if (suppressNextFrame) {
-            suppressNextFrame = false;
-        }
-        else if (suppressTimer <= 0f) {
-            SuppressInput = false;
+    public static void SuppressForOneFrame() {
+        if (instance != null) {
+            instance.StartCoroutine(instance.ClearAfterDelay(0.02f));
         }
     }
 }
+

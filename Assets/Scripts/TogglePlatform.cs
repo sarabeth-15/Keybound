@@ -7,6 +7,8 @@ public class TogglePlatform : MonoBehaviour
     private Vector3 originalScale;
     private Rigidbody2D rb;
     private bool used = false;
+    private bool keyWasReleased = true;
+    private float inputDelayUntil = 0f; 
 
     [SerializeField] public KeyCode toggleKey;
     [SerializeField] private Sprite brickON;
@@ -16,6 +18,8 @@ public class TogglePlatform : MonoBehaviour
 
     private void Start()
     {
+        inputDelayUntil = Time.unscaledTime + 0.2f;
+
         platformCollider = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
@@ -23,16 +27,31 @@ public class TogglePlatform : MonoBehaviour
         // Brick starts with disabled sprite, collider, and gravity
         platformCollider.enabled = false;
         originalScale = transform.localScale;
+
         if (rb != null) {
             rb.bodyType = RigidbodyType2D.Kinematic;
             rb.linearVelocity = Vector2.zero;
         }
+
         spriteRenderer.sprite = brickOFF;
     }
     private void Update() {
+        Debug.Log("Platform active: " + gameObject.name);
 
-        if (InputSuppressor.SuppressInput) return;
-        if (PauseMenu.IsKeyBlocked(toggleKey)) return;
+        if (Time.unscaledTime < inputDelayUntil) {
+            Debug.Log("Blocked by inputDelayUntil");
+            return;
+        }
+
+        if (InputSuppressor.SuppressInput) {
+            Debug.Log("Blocked by InputSuppressor");
+            return;
+        }
+
+        if (PauseMenu.IsKeyBlocked(toggleKey)) {
+            Debug.Log("Blocked by PauseMenu.IsKeyBlocked");
+            return;
+        }
 
         // By default, disables any bricks that are off-screen, in a different room, or not assigned a key
         if (toggleKey == KeyCode.None || (!spriteRenderer.isVisible && rb.bodyType != RigidbodyType2D.Dynamic)) return;
@@ -46,17 +65,34 @@ public class TogglePlatform : MonoBehaviour
         // True if key is being held down, false otherwise
         bool isKeyHeld = Input.GetKey(toggleKey);
         bool isKeyDown = Input.GetKeyDown(toggleKey);
+        bool isKeyUp = Input.GetKeyUp(toggleKey); 
+
+        if (isKeyUp) {
+            keyWasReleased = true; 
+        }
 
         // Checks type of brick, reacts accordingly
         if (falling) {
-            fallingBrick(isKeyHeld, isKeyDown);
+            if (keyWasReleased)
+                fallingBrick(isKeyHeld, isKeyDown);
         }
         else {
-            platformCollider.enabled = isKeyHeld;
-            spriteRenderer.sprite = isKeyHeld ? brickON : brickOFF;
-            transform.localScale = isKeyHeld ? originalScale * 1.1f : originalScale;
+            if (keyWasReleased) {
+                platformCollider.enabled = isKeyHeld;
+                spriteRenderer.sprite = isKeyHeld ? brickON : brickOFF;
+                transform.localScale = isKeyHeld ? originalScale * 1.1f : originalScale;
+            }
+
+            if (!isKeyHeld) {
+                keyWasReleased = true; // key has been let go, good to allow reactivation
+            }
+            else if (isKeyDown) {
+                keyWasReleased = false; // key is being pressed again
+            }
         }
+
     }
+
     private void fallingBrick(bool isKeyHeld, bool isKeyDown) {
         if (!used && isKeyDown) {
             used = true;
