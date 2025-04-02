@@ -23,10 +23,4 @@ public class BackgroundMusic : MonoBehaviour
         audioSource.loop = true;
         audioSource.Play();
     }
-
-    void Update()
-    {
-        // Sara: please feel free to let me know how to adjust this function based on how your code works :)
-        audioSource.volume = PlayerPrefs.GetFloat("MusicVolume", 1.0f);
-    }
 }

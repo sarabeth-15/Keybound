@@ -15540,6 +15540,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letterOverlaysEnabled: 1
+  musicVolume: 0.5
+  musicSource: {fileID: 729583960}
 --- !u!1 &1036291879
 GameObject:
   m_ObjectHideFlags: 0
@@ -21749,6 +21751,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionsMenu: {fileID: 1422816155}
   letterOverlayText: {fileID: 1629105403}
+  musicTriangle: {fileID: 856910266}
+  maxBarWidth: 1.6
+  volumeStep: 0.2
 --- !u!1 &1457817381
 GameObject:
   m_ObjectHideFlags: 0
