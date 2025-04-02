@@ -16,6 +16,10 @@ public class LevelEndTrigger : MonoBehaviour {
                 LevelResult.finalTime = LevelTimer.Instance.GetElapsedTime(); 
             }
         }
+        string sceneName = SceneManager.GetActiveScene().name;
+        int keys = PlayerInventory.instance != null ? PlayerInventory.instance.keysCollected : 0;
+        PlayerPrefs.SetInt("KeysCollected_" + sceneName, keys);
+
         LevelTracker.PreviousSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("LevelComplete");
     }

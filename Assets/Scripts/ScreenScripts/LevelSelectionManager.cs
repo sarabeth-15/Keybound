@@ -20,9 +20,36 @@ public class LevelSelectionManager : MonoBehaviour {
     private float jumpDelay = 0.5f;
     private float jumpTimer = 0f;
 
+    [SerializeField] private GameObject bannerLayoutLevel1;
+    [SerializeField] private GameObject bannerLayoutStandard;
+
+    [SerializeField] private TMP_Text levelNameText_Level1;
+    [SerializeField] private TMP_Text levelNameText_Standard;
+
+    [SerializeField] private Image level1CenterKeyImage;     // From BannerLayout_Level1/Key2
+    [SerializeField] private Image leftKeyImage;             // From BannerLayout_Standard/Key1
+    [SerializeField] private Image centerKeyImage;           // From BannerLayout_Standard/Key2
+    [SerializeField] private Image rightKeyImage;
+
+    [SerializeField] private Sprite keyOn;
+    [SerializeField] private Sprite keyOff;
+
     void Start() {
         maxUnlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+
+        bool startFromMainMenu = PlayerPrefs.GetInt("StartFromMainMenu", 0) == 1;
+        PlayerPrefs.DeleteKey("StartFromMainMenu"); // clear it after use
+
         int savedTargetLevel = PlayerPrefs.GetInt("PointerTargetLevel", 1);
+
+        if (startFromMainMenu) {
+            currentLevel = 1;
+            pointer.transform.position = levelPositions[0].position;
+            UpdateUI();
+            UpdateLevelName();
+            UpdateKeyDisplay(); 
+            return;
+        }
 
         if (savedTargetLevel > 1) {
             int previousLevel = savedTargetLevel - 1;
@@ -37,6 +64,7 @@ public class LevelSelectionManager : MonoBehaviour {
             pointer.transform.position = levelPositions[currentLevel - 1].position;
             UpdateUI();
             UpdateLevelName();
+            UpdateKeyDisplay(); 
         }
     }
 
@@ -49,6 +77,7 @@ public class LevelSelectionManager : MonoBehaviour {
                 isWaitingToJump = false;
                 UpdateUI();
                 UpdateLevelName();
+                UpdateKeyDisplay(); 
                 PlayerPrefs.DeleteKey("PointerTargetLevel");
             }
         }
@@ -70,8 +99,10 @@ public class LevelSelectionManager : MonoBehaviour {
     void SelectLevel(int level) {
         currentLevel = level;
         pointer.transform.position = levelPositions[currentLevel - 1].position;
+
         UpdateUI();
         UpdateLevelName();
+        UpdateKeyDisplay();
     }
 
     void UpdateUI() {
@@ -88,26 +119,38 @@ public class LevelSelectionManager : MonoBehaviour {
     }
 
     void UpdateLevelName() {
-        switch (currentLevel) {
-            case 1:
-                levelNameText.text = "LEVEL 1";
-                break;
-            case 2:
-                levelNameText.text = "LEVEL 2";
-                break;
-            case 3:
-                levelNameText.text = "LEVEL 3";
-                break;
-            case 4:
-                levelNameText.text = "LEVEL 4";
-                break;
-            default:
-                levelNameText.text = "LEVEL";
-                break;
+        string name = currentLevel switch {
+            1 => "LEVEL 1",
+            2 => "LEVEL 2",
+            3 => "LEVEL 3",
+            4 => "LEVEL 4",
+            _ => "LEVEL"
+        };
+
+        levelNameText_Level1.text = name;
+        levelNameText_Standard.text = name;
+    }
+
+    void UpdateKeyDisplay() {
+        string levelName = "Level" + currentLevel;
+        int keysCollected = PlayerPrefs.GetInt("KeysCollected_" + levelName, 0);
+        bool isLevel1 = currentLevel == 1;
+
+        bannerLayoutLevel1.SetActive(isLevel1);
+        bannerLayoutStandard.SetActive(!isLevel1);
+
+        if (isLevel1) {
+            level1CenterKeyImage.sprite = (keysCollected >= 1) ? keyOn : keyOff;
+        }
+        else {
+            leftKeyImage.sprite = (keysCollected >= 1) ? keyOn : keyOff;
+            rightKeyImage.sprite = (keysCollected >= 2) ? keyOn : keyOff;
+            centerKeyImage.sprite = (keysCollected >= 3) ? keyOn : keyOff;
         }
     }
 
     public void LoadLevel() {
         SceneManager.LoadScene("Level" + currentLevel);
     }
+
 }

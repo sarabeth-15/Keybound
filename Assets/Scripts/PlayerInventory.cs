@@ -6,7 +6,8 @@ public class PlayerInventory : MonoBehaviour
     public static PlayerInventory instance;
 
     // Variable to check if the player has collected the key
-    public bool hasKey = false;
+    public int keysCollected = 0;
+
 
     private void Awake()
     {
@@ -19,7 +20,7 @@ public class PlayerInventory : MonoBehaviour
 
     public void CollectKey()
     {
-        hasKey = true; // Set key status to collected
-        Debug.Log("Key collected!"); // Output message for testing
+        keysCollected += 1; // Set key status to collected
+        Debug.Log("Key collected! Total: " + keysCollected); // Output message for testing
     }
 }
