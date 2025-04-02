@@ -22,12 +22,12 @@ public class SettingsManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         SceneManager.sceneLoaded += OnSceneLoaded;
 
-        // Apply volume at startup
+        
         ApplyMusicVolume();
     }
 
     private void Start() {
-        ApplyMusicVolume(); // In case AudioSource starts in Start()
+        ApplyMusicVolume(); 
     }
 
     public void SetLetterOverlaysEnabled(bool enabled) {
@@ -49,7 +49,7 @@ public class SettingsManager : MonoBehaviour {
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         LetterOverlay.SyncAllOverlays(letterOverlaysEnabled);
-        ApplyMusicVolume(); // Reapply volume in case audio resets on scene load
+        ApplyMusicVolume(); 
     }
 }
 

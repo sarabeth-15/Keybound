@@ -42,20 +42,31 @@ public class PauseMenu : MonoBehaviour {
         }
 
         if (IsPaused && !IsOptions) {
-            if (Input.GetKeyDown(KeyCode.C)) { 
+            if (Input.GetKeyDown(KeyCode.C)) {
+                StartCoroutine(ResumeAfterDelay());
+            }
+
+            IEnumerator ResumeAfterDelay() {
+                InputSuppressor.SuppressForSeconds(0.2f);
+                yield return new WaitForSecondsRealtime(0.05f);
                 pauseMenu.SetActive(false);
                 IsPaused = false;
                 IsOptions = false;
                 Time.timeScale = 1;
-
-                InputSuppressor.SuppressForSeconds(0.2f);
             }
 
             if (Input.GetKeyDown(KeyCode.R)) {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                IsPaused = false;
-                Time.timeScale = 1;
+                StartCoroutine(RestartAfterDelay());
             }
+
+            IEnumerator RestartAfterDelay() {
+                Time.timeScale = 1;
+                InputSuppressor.SuppressForSeconds(0.2f);
+                yield return new WaitForSecondsRealtime(0.05f); // give suppression time to activate and settle
+                IsPaused = false;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+
 
             if (Input.GetKeyDown(KeyCode.O)) {
                 optionsMenu.SetActive(true);

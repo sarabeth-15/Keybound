@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.S)) {
             PauseMenu.ForceUnpause();
+            PlayerPrefs.DeleteKey("PointerTargetLevel"); 
             SceneManager.LoadScene("Level Selection Map");
         }
 

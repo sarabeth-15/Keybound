@@ -45,28 +45,29 @@ public class TogglePlatform : MonoBehaviour
 
         // True if key is being held down, false otherwise
         bool isKeyHeld = Input.GetKey(toggleKey);
+        bool isKeyDown = Input.GetKeyDown(toggleKey);
 
         // Checks type of brick, reacts accordingly
-        if (falling) fallingBrick(isKeyHeld);
+        if (falling) {
+            fallingBrick(isKeyHeld, isKeyDown);
+        }
         else {
             platformCollider.enabled = isKeyHeld;
             spriteRenderer.sprite = isKeyHeld ? brickON : brickOFF;
             transform.localScale = isKeyHeld ? originalScale * 1.1f : originalScale;
         }
     }
-    private void fallingBrick(bool isKeyHeld) {
-        // If key pressed, platform is turned on but doesn't fall
-        if (!used && isKeyHeld) {
+    private void fallingBrick(bool isKeyHeld, bool isKeyDown) {
+        if (!used && isKeyDown) {
             used = true;
             platformCollider.enabled = true;
             spriteRenderer.sprite = brickON;
             transform.localScale = originalScale * 1.1f;
         }
-        // When key is released, brick falls
         else if (used && !isKeyHeld && rb != null) {
             rb.bodyType = RigidbodyType2D.Dynamic;
             rb.gravityScale = 5;
-            rb.mass = 300;                          //CHANGE MASS OF FALLING BRICK HERE
+            rb.mass = 300;
             spriteRenderer.sprite = brickOFF;
             transform.localScale = originalScale;
             spriteRenderer.sortingOrder += 1;

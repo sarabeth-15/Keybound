@@ -11,6 +11,8 @@ public class LevelSelectionManager : MonoBehaviour {
     public TMP_Text lockedButtonText;
     public Image enterButtonImage;
 
+    [SerializeField] private TMP_Text levelNameText;
+
     public GameObject pointer;
     public Transform[] levelPositions;
 
@@ -20,11 +22,11 @@ public class LevelSelectionManager : MonoBehaviour {
 
     void Start() {
         maxUnlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
-
         int savedTargetLevel = PlayerPrefs.GetInt("PointerTargetLevel", 1);
+
         if (savedTargetLevel > 1) {
-            currentLevel = 1;
-            pointer.transform.position = levelPositions[0].position;
+            int previousLevel = savedTargetLevel - 1;
+            pointer.transform.position = levelPositions[previousLevel - 1].position;
 
             currentLevel = savedTargetLevel;
             isWaitingToJump = true;
@@ -34,6 +36,7 @@ public class LevelSelectionManager : MonoBehaviour {
             currentLevel = maxUnlockedLevel;
             pointer.transform.position = levelPositions[currentLevel - 1].position;
             UpdateUI();
+            UpdateLevelName();
         }
     }
 
@@ -45,6 +48,7 @@ public class LevelSelectionManager : MonoBehaviour {
                 pointer.transform.position = levelPositions[currentLevel - 1].position;
                 isWaitingToJump = false;
                 UpdateUI();
+                UpdateLevelName();
                 PlayerPrefs.DeleteKey("PointerTargetLevel");
             }
         }
@@ -67,6 +71,7 @@ public class LevelSelectionManager : MonoBehaviour {
         currentLevel = level;
         pointer.transform.position = levelPositions[currentLevel - 1].position;
         UpdateUI();
+        UpdateLevelName();
     }
 
     void UpdateUI() {
@@ -79,6 +84,26 @@ public class LevelSelectionManager : MonoBehaviour {
             enterButtonText.gameObject.SetActive(false);
             enterButtonImage.gameObject.SetActive(false);
             lockedButtonText.gameObject.SetActive(true);
+        }
+    }
+
+    void UpdateLevelName() {
+        switch (currentLevel) {
+            case 1:
+                levelNameText.text = "LEVEL 1";
+                break;
+            case 2:
+                levelNameText.text = "LEVEL 2";
+                break;
+            case 3:
+                levelNameText.text = "LEVEL 3";
+                break;
+            case 4:
+                levelNameText.text = "LEVEL 4";
+                break;
+            default:
+                levelNameText.text = "LEVEL";
+                break;
         }
     }
 

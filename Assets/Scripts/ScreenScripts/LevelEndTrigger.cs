@@ -16,6 +16,7 @@ public class LevelEndTrigger : MonoBehaviour {
                 LevelResult.finalTime = LevelTimer.Instance.GetElapsedTime(); 
             }
         }
+        LevelTracker.PreviousSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("LevelComplete");
     }
 }
