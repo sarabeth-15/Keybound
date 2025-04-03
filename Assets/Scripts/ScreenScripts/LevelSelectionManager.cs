@@ -20,6 +20,7 @@ public class LevelSelectionManager : MonoBehaviour {
 
     private int lastCompletedLevel = -1;
 
+    [SerializeField] private AudioClip buttonClip;
     [SerializeField] private GameObject bannerLayoutLevel1;
     [SerializeField] private GameObject bannerLayoutStandard;
 
@@ -104,12 +105,13 @@ public class LevelSelectionManager : MonoBehaviour {
     }
 
     void HandleInput() {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) SelectLevel(1);
-        else if (Input.GetKeyDown(KeyCode.Alpha2)) SelectLevel(2);
-        else if (Input.GetKeyDown(KeyCode.Alpha3)) SelectLevel(3);
-        else if (Input.GetKeyDown(KeyCode.Alpha4)) SelectLevel(4);
+        if (Input.GetKeyDown(KeyCode.Alpha1)) {SelectLevel(1); SoundFXManager.instance.PlaySound(buttonClip);}
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) {SelectLevel(2); SoundFXManager.instance.PlaySound(buttonClip);}
+        else if (Input.GetKeyDown(KeyCode.Alpha3)) {SelectLevel(3); SoundFXManager.instance.PlaySound(buttonClip);}
+        else if (Input.GetKeyDown(KeyCode.Alpha4)) {SelectLevel(4); SoundFXManager.instance.PlaySound(buttonClip);}
 
         if (Input.GetKeyDown(KeyCode.E) && currentLevel <= maxUnlockedLevel)
+            SoundFXManager.instance.PlaySound(buttonClip);
             LoadLevel();
     }
 

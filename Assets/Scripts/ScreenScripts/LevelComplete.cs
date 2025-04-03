@@ -6,18 +6,23 @@ public class LevelComplete : MonoBehaviour {
 
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI levelNameText; 
+    [SerializeField] private AudioClip buttonClip;
+    [SerializeField] private AudioClip completeClip;
 
     void Start() {
         DisplayTime();
         DisplayLevelName(); 
+        SoundFXManager.instance.PlaySound(completeClip);
     }
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.R)) {
+            SoundFXManager.instance.PlaySound(buttonClip);
             SceneManager.LoadScene("Level1"); // Restart current level
         }
 
         if (Input.GetKeyDown(KeyCode.N)) {
+            SoundFXManager.instance.PlaySound(buttonClip);
             GoToLevelSelection();
         }
     }

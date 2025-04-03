@@ -1,5 +1,6 @@
 using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
+    [SerializeField] private AudioClip jumpClip;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpPower = 10f;
     [SerializeField] private LayerMask groundLayer;
@@ -40,6 +41,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Jump() {
         if (isGrounded()) {
+            SoundFXManager.instance.PlaySound(jumpClip);
             body.linearVelocity = new Vector2(body.linearVelocity.x, jumpPower);
             anim.SetTrigger("jump");
         }

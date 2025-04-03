@@ -10,6 +10,7 @@ public class TogglePlatform : MonoBehaviour
     private bool keyWasReleased = true;
     private float inputDelayUntil = 0f; 
 
+    [SerializeField] private AudioClip brickActiveClip;
     [SerializeField] public KeyCode toggleKey;
     [SerializeField] private Sprite brickON;
     [SerializeField] private Sprite brickOFF;
@@ -36,20 +37,16 @@ public class TogglePlatform : MonoBehaviour
         spriteRenderer.sprite = brickOFF;
     }
     private void Update() {
-        Debug.Log("Platform active: " + gameObject.name);
 
         if (Time.unscaledTime < inputDelayUntil) {
-            Debug.Log("Blocked by inputDelayUntil");
             return;
         }
 
         if (InputSuppressor.SuppressInput) {
-            Debug.Log("Blocked by InputSuppressor");
             return;
         }
 
         if (PauseMenu.IsKeyBlocked(toggleKey)) {
-            Debug.Log("Blocked by PauseMenu.IsKeyBlocked");
             return;
         }
 
@@ -69,6 +66,10 @@ public class TogglePlatform : MonoBehaviour
 
         if (isKeyUp) {
             keyWasReleased = true; 
+        }
+
+        if (isKeyDown){
+            SoundFXManager.instance.PlaySound(brickActiveClip);
         }
 
         // Checks type of brick, reacts accordingly
