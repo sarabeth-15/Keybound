@@ -3,7 +3,6 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpPower = 10f;
     [SerializeField] private LayerMask groundLayer;
-    
     private Rigidbody2D body;
     private CapsuleCollider2D boxCollider;
     private float horizontalInput;
@@ -54,8 +53,5 @@ public class PlayerMovement : MonoBehaviour {
 
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCenter, boxSize, 0, Vector2.down, extraHeight, groundLayer);
         return raycastHit.collider != null;
-    }
-    public void SetJumpPower(float newJumpPower) {
-        jumpPower = newJumpPower;
     }
 }
