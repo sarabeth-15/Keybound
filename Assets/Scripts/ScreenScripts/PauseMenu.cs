@@ -72,7 +72,7 @@ public class PauseMenu : MonoBehaviour {
                 optionsMenu.SetActive(true);
                 optionsCanvasSync.UpdateOverlayUI();
                 IsOptions = true;
-                Time.timeScale = 1;
+                Time.timeScale = 0;
             }
 
             if (Input.GetKeyDown(KeyCode.Q)) {
