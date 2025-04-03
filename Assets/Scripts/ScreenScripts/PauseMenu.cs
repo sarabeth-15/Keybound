@@ -14,9 +14,6 @@ public class PauseMenu : MonoBehaviour {
     public static HashSet<KeyCode> blockedKeys = new HashSet<KeyCode>();
     public static float resumeM = 0;
 
-    public static bool suppressCThisFrame = false;
-    public static bool JustResumed = false; 
-
     private void Update() {
         if (resumeM > 0f) {
             resumeM -= Time.unscaledDeltaTime;
@@ -46,28 +43,36 @@ public class PauseMenu : MonoBehaviour {
 
         if (IsPaused && !IsOptions) {
             if (Input.GetKeyDown(KeyCode.C)) {
-                suppressCThisFrame = true; 
+                StartCoroutine(ResumeAfterDelay());
+            }
+
+            IEnumerator ResumeAfterDelay() {
+                InputSuppressor.SuppressForSeconds(0.2f);
+                yield return new WaitForSecondsRealtime(0.05f);
                 pauseMenu.SetActive(false);
                 IsPaused = false;
                 IsOptions = false;
                 Time.timeScale = 1;
-                resumeM = 0.2f;
-
-                suppressCThisFrame = true;
-                JustResumed = true; 
             }
 
             if (Input.GetKeyDown(KeyCode.R)) {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                IsPaused = false;
-                Time.timeScale = 1;
+                StartCoroutine(RestartAfterDelay());
             }
+
+            IEnumerator RestartAfterDelay() {
+                Time.timeScale = 1;
+                InputSuppressor.SuppressForSeconds(0.2f);
+                yield return new WaitForSecondsRealtime(0.05f); // give suppression time to activate and settle
+                IsPaused = false;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+
 
             if (Input.GetKeyDown(KeyCode.O)) {
                 optionsMenu.SetActive(true);
                 optionsCanvasSync.UpdateOverlayUI();
                 IsOptions = true;
-                Time.timeScale = 1;
+                Time.timeScale = 0;
             }
 
             if (Input.GetKeyDown(KeyCode.Q)) {
@@ -76,18 +81,6 @@ public class PauseMenu : MonoBehaviour {
             }
         }
 
-        suppressCThisFrame = false;
-    }
-
-    private void LateUpdate() {
-        if (JustResumed) {
-            StartCoroutine(ClearJustResumedFlag());
-        }
-    }
-
-    private IEnumerator ClearJustResumedFlag() {
-        yield return null; 
-        JustResumed = false;
     }
 
     public static bool IsKeyBlocked(KeyCode key) {

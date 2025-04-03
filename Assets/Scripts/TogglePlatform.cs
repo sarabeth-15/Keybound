@@ -7,13 +7,19 @@ public class TogglePlatform : MonoBehaviour
     private Vector3 originalScale;
     private Rigidbody2D rb;
     private bool used = false;
+    private bool keyWasReleased = true;
+    private float inputDelayUntil = 0f; 
+
     [SerializeField] public KeyCode toggleKey;
     [SerializeField] private Sprite brickON;
     [SerializeField] private Sprite brickOFF;
     [SerializeField] public RoomCheck room;
     [SerializeField] public bool falling; 
+
     private void Start()
     {
+        inputDelayUntil = Time.unscaledTime + 0.2f;
+
         platformCollider = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
@@ -22,16 +28,33 @@ public class TogglePlatform : MonoBehaviour
         // Brick starts with disabled sprite, collider, and gravity
         platformCollider.enabled = false;
         originalScale = transform.localScale;
+
         if (rb != null) {
             rb.bodyType = RigidbodyType2D.Kinematic;
             rb.linearVelocity = Vector2.zero;
         }
+
         spriteRenderer.sprite = brickOFF;
     }
     private void Update() {
         if (PauseMenu.JustResumed) return;
 
-        if (PauseMenu.IsKeyBlocked(toggleKey) || (toggleKey == KeyCode.C && PauseMenu.suppressCThisFrame)) return;
+        Debug.Log("Platform active: " + gameObject.name);
+
+        if (Time.unscaledTime < inputDelayUntil) {
+            Debug.Log("Blocked by inputDelayUntil");
+            return;
+        }
+
+        if (InputSuppressor.SuppressInput) {
+            Debug.Log("Blocked by InputSuppressor");
+            return;
+        }
+
+        if (PauseMenu.IsKeyBlocked(toggleKey)) {
+            Debug.Log("Blocked by PauseMenu.IsKeyBlocked");
+            return;
+        }
 
         // By default, disables any bricks that are off-screen, in a different room, or not assigned a key
         if (toggleKey == KeyCode.None || (!spriteRenderer.isVisible && rb.bodyType != RigidbodyType2D.Dynamic)) return;
@@ -44,28 +67,46 @@ public class TogglePlatform : MonoBehaviour
 
         // True if key is being held down, false otherwise
         bool isKeyHeld = Input.GetKey(toggleKey);
+        bool isKeyDown = Input.GetKeyDown(toggleKey);
+        bool isKeyUp = Input.GetKeyUp(toggleKey); 
+
+        if (isKeyUp) {
+            keyWasReleased = true; 
+        }
 
         // Checks type of brick, reacts accordingly
-        if (falling) fallingBrick(isKeyHeld);
-        else {
-            platformCollider.enabled = isKeyHeld;
-            spriteRenderer.sprite = isKeyHeld ? brickON : brickOFF;
-            transform.localScale = isKeyHeld ? originalScale * 1.1f : originalScale;
+        if (falling) {
+            if (keyWasReleased)
+                fallingBrick(isKeyHeld, isKeyDown);
         }
+        else {
+            if (keyWasReleased) {
+                platformCollider.enabled = isKeyHeld;
+                spriteRenderer.sprite = isKeyHeld ? brickON : brickOFF;
+                transform.localScale = isKeyHeld ? originalScale * 1.1f : originalScale;
+            }
+
+            if (!isKeyHeld) {
+                keyWasReleased = true; // key has been let go, good to allow reactivation
+            }
+            else if (isKeyDown) {
+                keyWasReleased = false; // key is being pressed again
+            }
+        }
+
     }
-    private void fallingBrick(bool isKeyHeld) {
-        // If key pressed, platform is turned on but doesn't fall
-        if (!used && isKeyHeld) {
+
+    private void fallingBrick(bool isKeyHeld, bool isKeyDown) {
+        if (!used && isKeyDown) {
             used = true;
             platformCollider.enabled = true;
             spriteRenderer.sprite = brickON;
             transform.localScale = originalScale * 1.1f;
         }
-        // When key is released, brick falls
         else if (used && !isKeyHeld && rb != null) {
             rb.bodyType = RigidbodyType2D.Dynamic;
             rb.gravityScale = 5;
-            rb.mass = 300;                          //CHANGE MASS OF FALLING BRICK HERE
+            rb.mass = 300;
             spriteRenderer.sprite = brickOFF;
             transform.localScale = originalScale;
             spriteRenderer.sortingOrder += 1;

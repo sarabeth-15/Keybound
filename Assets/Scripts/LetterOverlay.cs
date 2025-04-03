@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class LetterOverlay : MonoBehaviour {
@@ -11,8 +12,12 @@ public class LetterOverlay : MonoBehaviour {
     [SerializeField] private Color32 colorOFF;
     [SerializeField] private Color32 colorON;
 
+    private float inputDelayUntil = 0f;
+
     private void Start() {
+
         togglePlatform = GetComponentInParent<TogglePlatform>();
+
         if (togglePlatform == null) {
             Debug.LogError("LetterOverlay must be attached to a child of an object with TogglePlatform!");
             return;
@@ -32,8 +37,9 @@ public class LetterOverlay : MonoBehaviour {
 
         colorOFF = new Color32(32, 25, 29, 255);
         colorON = new Color32(48, 37, 44, 255);
-
         letterRenderer.color = colorOFF;
+
+        inputDelayUntil = Time.unscaledTime + 0.2f; 
 
         StartCoroutine(InitializeOverlayVisibility());
     }
@@ -45,15 +51,15 @@ public class LetterOverlay : MonoBehaviour {
             letterObject.SetActive(SettingsManager.Instance.letterOverlaysEnabled);
         }
 
-        // Run input update with a delay to avoid showing 'C' on resume
         StartCoroutine(UpdateOverlayColorNextFrame());
     }
 
     private IEnumerator UpdateOverlayColorNextFrame() {
         yield return null; // wait 1 frame so key input has time to clear
 
+        if (Time.unscaledTime < inputDelayUntil) yield break;
+        if (InputSuppressor.SuppressInput) yield break; 
         if (PauseMenu.IsKeyBlocked(togglePlatform.toggleKey)) yield break;
-        if (PauseMenu.JustResumed) yield break;
 
         if (!room.playerInRoom) {
             letterRenderer.color = colorOFF;
