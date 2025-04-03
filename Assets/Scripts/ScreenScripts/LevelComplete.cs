@@ -60,7 +60,7 @@ public class LevelComplete : MonoBehaviour {
             int.TryParse(prevScene.Substring(5), out levelNum); 
         }
 
-        int nextLevel = levelNum + 1;
+        int nextLevel = Mathf.Min(levelNum + 1, 4); 
         int previousUnlocked = PlayerPrefs.GetInt("UnlockedLevel", 1);
 
         if (nextLevel > previousUnlocked) {
