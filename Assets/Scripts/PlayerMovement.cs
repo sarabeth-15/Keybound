@@ -54,4 +54,8 @@ public class PlayerMovement : MonoBehaviour {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCenter, boxSize, 0, Vector2.down, extraHeight, groundLayer);
         return raycastHit.collider != null;
     }
+
+    public void SetJumpPower(float newJumpPower) {
+        jumpPower = newJumpPower;
+    }
 }
