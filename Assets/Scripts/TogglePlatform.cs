@@ -24,6 +24,7 @@ public class TogglePlatform : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
 
+
         // Brick starts with disabled sprite, collider, and gravity
         platformCollider.enabled = false;
         originalScale = transform.localScale;
@@ -36,6 +37,8 @@ public class TogglePlatform : MonoBehaviour
         spriteRenderer.sprite = brickOFF;
     }
     private void Update() {
+        if (PauseMenu.JustResumed) return;
+
         Debug.Log("Platform active: " + gameObject.name);
 
         if (Time.unscaledTime < inputDelayUntil) {
