@@ -110,9 +110,10 @@ public class LevelSelectionManager : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.Alpha3)) {SelectLevel(3); SoundFXManager.instance.PlaySound(buttonClip);}
         else if (Input.GetKeyDown(KeyCode.Alpha4)) {SelectLevel(4); SoundFXManager.instance.PlaySound(buttonClip);}
 
-        if (Input.GetKeyDown(KeyCode.E) && currentLevel <= maxUnlockedLevel)
+        if (Input.GetKeyDown(KeyCode.E) && currentLevel <= maxUnlockedLevel){
             SoundFXManager.instance.PlaySound(buttonClip);
             LoadLevel();
+        }
     }
 
     void SelectLevel(int level) {

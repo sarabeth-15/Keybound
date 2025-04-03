@@ -18,8 +18,7 @@ public class LevelComplete : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.R)) {
             SoundFXManager.instance.PlaySound(buttonClip);
-            SceneManager.LoadScene("Level1"); // Restart current level
-        }
+            SceneManager.LoadScene(LevelTracker.PreviousSceneName);        }
 
         if (Input.GetKeyDown(KeyCode.N)) {
             SoundFXManager.instance.PlaySound(buttonClip);
