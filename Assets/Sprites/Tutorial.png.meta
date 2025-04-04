@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -114,6 +114,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -121,8 +134,8 @@ TextureImporter:
       name: Tutorial_0
       rect:
         serializedVersion: 2
-        x: 119
-        y: 1685
+        x: 21
+        y: 1866
         width: 289
         height: 265
       alignment: 0
@@ -143,8 +156,8 @@ TextureImporter:
       name: Tutorial_1
       rect:
         serializedVersion: 2
-        x: 543
-        y: 1727
+        x: 445
+        y: 1908
         width: 367
         height: 172
       alignment: 0
@@ -165,8 +178,8 @@ TextureImporter:
       name: Tutorial_2
       rect:
         serializedVersion: 2
-        x: 1012
-        y: 1513
+        x: 914
+        y: 1694
         width: 1684
         height: 493
       alignment: 0
@@ -187,9 +200,9 @@ TextureImporter:
       name: Tutorial_3
       rect:
         serializedVersion: 2
-        x: 362
-        y: 1013
-        width: 2334
+        x: 344
+        y: 1194
+        width: 2254
         height: 494
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -209,8 +222,8 @@ TextureImporter:
       name: Tutorial_4
       rect:
         serializedVersion: 2
-        x: 198
-        y: 520
+        x: 100
+        y: 701
         width: 1216
         height: 491
       alignment: 0
@@ -231,8 +244,8 @@ TextureImporter:
       name: Tutorial_5
       rect:
         serializedVersion: 2
-        x: 1490
-        y: 518
+        x: 1392
+        y: 699
         width: 1206
         height: 493
       alignment: 0
@@ -253,10 +266,10 @@ TextureImporter:
       name: Tutorial_6
       rect:
         serializedVersion: 2
-        x: 108
-        y: 20
-        width: 2588
-        height: 494
+        x: 971
+        y: 29
+        width: 1627
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,14 +297,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Tutorial_0: -2521409195606705084
-      Tutorial_1: 6875079111340007291
-      Tutorial_2: 8746059415684039367
-      Tutorial_3: 4165041436626036476
-      Tutorial_4: 3422399714171777717
-      Tutorial_5: 6718306707676705251
-      Tutorial_6: -2599143105346636691
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
